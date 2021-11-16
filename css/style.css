@@ -6,74 +6,31 @@
   font-family: 'Roboto';
   src: url('../font/Roboto-Bold.ttf');
 }
+@font-face {
+  font-family: 'Cormorant-Bold';
+  src: url('../font/Cormorant-Bold.oft');
+
+}
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Roboto';
+  font-family: 'Cormorant-Bold';
 }
 body{
 font-family: 'Noto Sans';
 }
-.accent-1{
-color:#6C6663;
+.accent-1,a:hover{
+color:#6C6663 !important;
 }
 .accent-2{
-color:#8D8884;
+color:#8D8884 !important;
 }
 .accent-3{
-color:#AEAAA5;
+color:#AEAAA5 !important;
 }
 .accent-4{
-color:#4C4442;
+color:#4C4442 !important;
 }
 .accent-5{
-color:#F3EFEC;
-}
-.hero-section .hero-video{
-top: 0;
-z-index: -1;
-height:55vw;
-display: flex;
-overflow: hidden;
-}
-.hero-section .container-fluid{
-	border-radius: 8px;
-overflow: hidden;
-height: 100%;
-background-image: linear-gradient(180deg,#F3EFEC,rgba(255,255,255,0) 42%,rgba( 	243, 239, 236,.49)),linear-gradient(180deg,hsla(0,0%,100%,0) 30%,#4C4442);
-}
-.hero-section .hero-inner{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-}
-.artwork-card-section .artwork-card{
-min-height: 400px;
-background-image: url(http://leturetech.com/sites/crypto-currency/final-work/images/product1.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-color: #F3EFEC;	
-border-radius:8px;
-position: relative;
-overflow: hidden;
-}
-.artwork-card-section .artwork-card::after{
-content: "";
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-background: inherit;
-background-size: cover;
-transform-origin: center;
-transition: transform 0.4s ease-in-out;
-}
-.artwork-card .artwork-card-bottom{
-	z-index:1;
-}
-.artwork-card-section .artwork-card:hover::after{
-transform: scale(1.2);
+color:#F3EFEC !important;
 }
 .border-top{
 border-top:2px solid #4C4442 !important;
@@ -81,14 +38,11 @@ border-top:2px solid #4C4442 !important;
 .border-bottom{
 border-bottom:2px solid #4C4442 !important;	
 }
-.nav-item a{
-font-size:18px;
-}
 .foreground-bg{
-background-color:#4C4442;
+background-color:#4C4442 !important;
 }
 .main-bg{
-background-color:#F3EFEC;
+background-color:#F3EFEC !important;
 }
 .foreground-bg:hover,.foreground-bg:focus{
 background-color:#4C4442 !important;
@@ -98,35 +52,91 @@ opacity:.8;
 background-color:#F3EFEC !important;
 opacity:.8;
 }
-
-.main-bg:focus,.foreground-bg:focus{
-	box-shadow:none;
+.btn-primary:focus,.btn:focus,button:focus{
+box-shadow:none !important;
 }
-.card-action-inner h5 .card-action-time{
+.container{
+max-width:1300px !important;
+}
+
+header{
+box-shadow: 0 0 10px rgba(3,0,16,.2);
+border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.nav-item a i.fa{
+font-size:28px;
+}
+.nav-item a{
+font-size:18px;
+}
+
+.breadcrumb-banner-section{
+background-image:url(https://demos.codexcoder.com/labartisan/html/nft/enftomark-light/assets/images/banner/pg-header-banner.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;	
+padding-top:150px;
+padding-bottom:100px;
+}
+.item-details-section .item-thumb{
+border-radius: 10px;
+overflow: hidden;
+}
+.item-details-section .item-buy-part{
+background: #F3EFEC;
+padding: 35px 40px;
+border-radius: 10px;
+}
+#countdown .count-col{
+display:inline-block;
+text-align:center;
+margin-right:10px;
+}
+#countdown .count-col .number{
+background: #4C4442;
+padding: 10px 20px;
+border-radius: 5px;	
+color:#fff;
+font-size:25px;
+font-weight:bold;
+margin-bottom:5px;
+}
+.item-details-section .item-price img{
+width:20px;
+}
+.item-details-section .item-price h6{
+font-size: 22px;
+font-weight: bold;
+}
+.item-price h6 .dollar{
+font-weight: normal;
 font-size: 15px;
-font-family: 'Noto Sans';	
 }
-a.artwork-card:hover .card-text-right  img{
-transform: rotate(45deg);
+.item-desc-content .nav li a,.item-auction-btnArea button{
+  font-family: 'Cormorant-Bold';
 }
-.artwork-card .card-text-right  img{
-transition-duration: 0.5s;
+.item-desc-content .nav a.active{
+position:relative;
 }
-
-.collection-image-wrapper img{
-max-width: 250px;
-margin: 0px auto;
-border-radius: 5px;
+.item-desc-content .nav a.active::before,
+.item-desc-content .nav a.active::after{
+content: "";
+left: 50%;
+transform: translateX(-50%);
+border-style: solid;
+position: absolute;
 }
-.collection-image-wrapper .img-1{
-vertical-align: baseline;	
+.item-desc-content .nav a.active::after{
+border-width: 0 12px 15px 12px;		
+border-color: transparent transparent #4C4442 transparent;
+bottom: -19px;
 }
-.collection-image-wrapper .img-2{
-max-width: 220px;
-margin-left: -80px;
-margin-top: -120px;
+.item-desc-content .nav a.active::before{	
+border-width: 0 9px 11px 9px;
+border-color: transparent transparent #fff transparent;
+bottom: -19px;
+z-index: 2;
 }
-
 
 
 footer{

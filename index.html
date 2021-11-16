@@ -5,14 +5,48 @@
 	<link rel="icon" href="images/uniquire-logo-animation.svg" type="image/gif" sizes="16x16"> 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="js/bootstrap.js"></script>	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 26, 2021 15:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown").innerHTML = "<div class='count-col'><p class='number'>" + days + "</p><p>Days</p></div>" 
+  + "<div class='count-col'><p class='number'>" + hours + "</p><p>Hours</p></div>" + 
+  "<div class='count-col'><p class='number'>" + minutes + "</p><p>Mins</p></div>" + "<div class='count-col'><p class='number'>"
+  + seconds + "</p><p>Secs</p></div>";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </head>
-<body class="uniquire-page">
-	<header>
+<body class="uniquire-page product-page">
+	<header class="position-absolute">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
-				<div class="row w-100 py-3">
+				<div class="row w-100 py-2">
 					<div class="col-lg-3 col-md-6 col-sm-6 col-10">
 						<div class="site-logo ms-4">
 							<a href="#">
@@ -27,13 +61,30 @@
 									<a class="nav-link text-dark" href="#">Home</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link text-dark" href="#">About</a>
+									<a class="nav-link text-dark" href="#">Discover</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Activity</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Community</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link text-dark" href="#">Contact</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link text-dark" href="#">Company</a>
+									<a class="nav-link accent-4" href="#" type="button"><i class="fa fa-user"></i></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link accent-4" href="#" type="button">
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wallet" class="svg-inline--fa fa-wallet fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+											<path fill="currentColor" d="M461.2 128H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h384c8.84 0 16-7.16 16-16 0-26.51-21.49-48-48-48H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h397.2c28.02 0 50.8-21.53 50.8-48V176c0-26.47-22.78-48-50.8-48zM416 336c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z">
+											</path>
+										</svg>
+									</a>
+								</li>
+								<li class="nav-item ms-2">
+									<a class="nav-link btn btn-primary border-0 px-3 text-white foreground-bg rounded" href="#" type="button">Connect Wallet</a>
 								</li>
 							</ul>
 						</div>
@@ -43,118 +94,77 @@
 		</nav>
 	</header>
 	<content>
-		<div class="hero-section px-2 d-flex align-items-center h-100">
-			<div class="container-fluid p-0 position-relative">
-				<div class="hero-video position-relative">
-					<iframe src="https://player.vimeo.com/video/118749648?api=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;muted=1&amp;controls=0" __idm_id__="637172737" width="100%" height="100%" frameborder="0"></iframe>
-				</div>
-				<div class="hero-inner text-center">
-					<h5 class="text-uppercase text-white">Discover</h5>
-					<h1 class="text-white">Helena <br>Tchen</h1>
-					<h5 class="text-uppercase text-white">Featured artist</h5>
-					<p class="text-uppercase text-white">Curated by <a href="#">@helenatchen</a></p>
-				</div>
-			</div>
+		<div class="breadcrumb-banner-section text-center">
+			<h2 class="accent-4 mb-0">Artist Details</h2>
+			<p class="mb-0">Lorem ipsum dolor sit amet</p>
 		</div>
-		<div class="artwork-card-section mb-5 mt-3">
-			<div class="container-fluid">
+		<div class="item-details-section mb-5 mt-5">
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-						<a href="#" class="artwork-card artwork-card-1 d-flex align-items-end w-100">
-							<div class="artwork-card-bottom position-relative w-100 px-4 pb-5">
-								<div class="card-text-left w-75 float-start">
-									<h2 class="accent-4 fw-bold">About The Artist</h2>
-								</div>
-								<div class="card-text-right w-25 float-start text-end">
-									<img src="images/arrow-white.png">
-								</div><div class="clearfix"></div>
-							</div>
-						</a>
-						<a href="#" class="artwork-card artwork-card-2 d-flex align-items-end w-100 mt-4">
-							<div class="artwork-card-bottom position-relative w-100 px-4 pb-5">
-								<div class="card-text-left w-75 float-start">										
-									<h2 class="accent-4 fw-bold">About The Gallery</h2>
-								</div>
-								<div class="card-text-right w-25 float-start text-end">
-									<img src="images/arrow-white.png">
-								</div><div class="clearfix"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-12 card-action">
-						<div class="card-action-inner border-bottom">
-							<h5 class="p-3 mb-0"><span class="me-4 accent-4">Auction Live</span> <span class="card-action-time">Ends in 2 days(July 18, 2021 at 2.45pm +06)</span></h5>
-							<div class="row border-top g-0 p-3">
-								<div class="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center">
-									<div class="stock-vector-icon">
-										<img src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg">
-									</div>
-									<div class="current-price ps-3">
-										<p class="mb-0 text-end">Current price:<br>
-											<b class="accent-4">2,63 ETH</b><br>
-											<span>($ 7,352)</span>
+						<div class="item-thumb w-100">
+							<img class="w-100" src="images/product1.png">
+						</div>
+						<div class="item-desc-content mt-3">
+							<ul class="nav nav-tabs p-3 border-bottom">
+								<li class="fw-bold me-4">
+									<a class="accent-4 text-decoration-none active" data-toggle="tab" href="#description-tab">DESCRIPTION</a>
+								</li>
+								<li class=" fw-bold me-4">
+									<a class="accent-4 text-decoration-none" data-toggle="tab" href="#history-tab">HISTORY</a>
+								</li>
+								<li class="fw-bold">
+									<a class="accent-4 text-decoration-none" data-toggle="tab" href="#bids-tab">BIDS</a>
+								</li>
+							</ul>
+							<div class="tab-content py-3 px-4 bg-white">
+								<div id="description-tab" class="tab-pane active">
+										<p class="text-dark">
+										This photo series began from my desire of enligting chinese women and to get closer from my origins. I'm a child of immigrants, I was born and raised in Paris by my mom who is colombian. My biological father is sino american. I'v never been able to be in contact with my Chinese roots.
 										</p>
-									</div>
+										<p class="text-dark">Growing up looking as a half Chinese woman in a predominantly white society that still holds habits of ordinary and systemic racism was very ambiguous, for a long time french racism was the only mirror to my origins. Those last years I was able to create and photograph more and more asian women which allowed me to have a clearer view of myself and the position of persons of color in our societies</p><br>
+										<p class="text-dark">Styling @gabitror Model @oldplaydizzy<br> Make-up @marieke_thibaut Hair @miwamoroki<br> Set @quentin_far<br> Lights @tene_kaveli<br> Shot at studio @lpovs</p>
+										<p class="text-dark mb-0">#colors #pink #dream #crazyhair #analog #kodak #120mmfilm #fashion #beauty #portrait</p>
 								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-12 mt-sm-0 mt-4">
-									<div class="auction-btnArea text-center">
-										<button class="place-bid-btn btn btn-primary py-3 lh-1 w-100 border-0 fw-bold foreground-bg rounded-pill" data-bs-toggle="collapse" data-bs-target="#product-modal-bid">PLACE BID</button>
-										<div id="" class="product-modal-bid collapse">
-											<div class="bid-modal-content">
-												<button class="modal-bid-close bg-white btn-close position-absolute" type="button" aria-label="Close"></button>
-												<h4>Place a bid</h4>
-												<label class="w-100 text-start">Your bid
-													<input class="w-100 p-2 border rounded" type="text" name="placebid">
-												</label>
-												<p class="mt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-												<button class="bid-btn btn btn-primary py-3 lh-1 w-100 border-0 foreground-bg fw-bold rounded-pill" type="button">Take a bid</button>
-											</div>
-										</div>
-										<p class="my-2">OR</p>
-										<button class="btn btn-primary foreground-bg py-3 lh-1 w-100 border-0 fw-bold rounded-pill">BUY NOW FOR 5,5 ETH</button>
-									</div>
+								<div id="history-tab" class="tab-pane">	
+									history					
+								</div>
+								<div id="bids-tab" class="ccNFT-bids-tab tab-pane">
+									bids
 								</div>
 							</div>
 						</div>
-						<div class="card-description">
-							<h5 class="p-3 mb-0 border-bottom accent-4">Description</h5>
-							<p class="text-dark mt-4">
-							This photo series began from my desire of enligting chinese women and to get closer from my origins. I'm a child of immigrants, I was born and raised in Paris by my mom who is colombian. My biological father is sino american. I'v never been able to be in contact with my Chinese roots.
-							</p>
-							<p class="text-dark">Growing up looking as a half Chinese woman in a predominantly white society that still holds habits of ordinary and systemic racism was very ambiguous, for a long time french racism was the only mirror to my origins. Those last years I was able to create and photograph more and more asian women which allowed me to have a clearer view of myself and the position of persons of color in our societies</p><br>
-							<p class="text-dark">Styling @gabitror Model @oldplaydizzy<br> Make-up @marieke_thibaut Hair @miwamoroki<br> Set @quentin_far<br> Lights @tene_kaveli<br> Shot at studio @lpovs</p>
-							<p class="text-dark mb-0">#colors #pink #dream #crazyhair #analog #kodak #120mmfilm #fashion #beauty #portrait</p>
-						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-4">
-						<a href="#" class="artwork-card artwork-card-1 d-flex align-items-end w-100">
-							<div class="artwork-card-bottom position-relative w-100 px-4 pb-5">
-								<div class="card-text-left w-75 float-start">
-									<h2 class="accent-4 fw-bold">History</h2>
-								</div>
-								<div class="card-text-right w-25 float-start text-end">
-									<img src="images/arrow-white.png">
-								</div><div class="clearfix"></div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="item-buy-part position-sticky top-0">
+							<div class="nft-item-title">
+								<h2 class="mb-0">Suenos on @duelmagazine</h2>
+								<h5 class="mb-0">Helena Tchen <i class="ms-2 fa fa-check-circle"></i></h5>
+								<a href="#">@helenatchen</a>
 							</div>
-						</a>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-4">
-						<a href="#" class="artwork-card artwork-card-1 d-flex align-items-end w-100">
-							<div class="artwork-card-bottom position-relative w-100 px-4 pb-5">
-								<div class="card-text-left w-75 float-start">
-									<h2 class="accent-4 fw-bold">Bids</h2>
-								</div>
-								<div class="card-text-right w-25 float-start text-end">
-									<img src="images/arrow-white.png">
-								</div><div class="clearfix"></div>
+							<div class="mb-2 mt-4 border-bottom">
+								<h4 class="mb-1">AUCTION LIVE</h4>
 							</div>
-						</a>
+							<div class="item-details-countdown">
+								<h5>Ends In:</h5>
+								<div id='countdown'></div>	
+							</div>
+							<div class="item-price mt-4 mb-3">
+								<h5 class="border-bottom pb-1">CURRENT PRICE:</h5>
+								<h6><span><img src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"> 2,63 ETH</span> <span class="dollar">($ 7,352)</span></h6>
+							</div>
+							<div class="item-auction-btnArea">
+								<button class="place-bid-btn btn btn-primary py-3 lh-1 w-100 border-0 fw-bold foreground-bg rounded">PLACE BID</button>
+								<p class="text-center fw-bold my-1 h5">Or</p>
+								<button class="place-bid-btn btn btn-primary py-3 lh-1 w-100 border-0 fw-bold foreground-bg rounded">BUY NOW FOR 5,5 ETH</button>
+							</div>
+						</div>	
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="collection-section">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="border-top">
 					<div class="row py-5">
 						<div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
@@ -167,10 +177,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center mt-md-0 mt-5">
-							<div class="collection-image-wrapper">
-								<img class="img-1 w-100" src="images/collection1.jpg">
-								<img class="img-2 w-100" src="images/collection2.jpg">
-							</div>
+							<img src="images/Screenshot.png">
 						</div>
 					</div>	
 				</div>	
@@ -178,8 +185,8 @@
 		</div>
 	</content>
 	<footer>
-		<div class="container-fluid">
-			<div class="row px-4 py-5">
+		<div class="container">
+			<div class="row py-5">
 				<div class="footer-logo mt-4 mb-5">
 					<a href="#"><img class="w-100" src="images/logo-Uniquire-color-web.png"></a>
 				</div>
