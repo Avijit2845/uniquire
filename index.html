@@ -73,15 +73,295 @@ var x = setInterval(function() {
 									<a class="nav-link text-dark" href="#">Contact</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link accent-4" href="#" type="button"><i class="fa fa-user"></i></a>
+									<a class="user-icon nav-link color-accent-4" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#authentication-section" aria-controls="authentication-section">
+									<i class="fa fa-user"></i>
+									</a>
+									<div id="authentication-section" class="w-100 h-100 dropdown-menu position-fixed border-0 top-0 start-0 rounded-0 collapse" style="">
+										<div class="authentication-form position-fixed h-100 w-100 top-0 end-0">
+											<ul class="nav nav-tabs mt-2 border-0">
+												<li class="w-10 px-2 p-0 d-flex align-items-center">
+													<button class="ADV-closeBtn bg-white btn-close" type="button" aria-label="Close"></button>
+												</li>
+												<li class="authentication-tab w-40 p-0 text-center fw-bold ">
+													<a class="signIn-btn text-white text-uppercase d-block  rounded px-2 py-2 active" data-toggle="tab" href="#sign-in">Sign In</a>			
+												</li>
+												<li class="authentication-tab w-40 p-0 text-center fw-bold ">
+													<a class="signUp-btn text-uppercase d-block text-white rounded px-2 py-2" data-toggle="tab" href="#sign-up">Sign Up</a>
+												</li>
+												<li class="w-10"></li>
+											</ul>
+											<div class="tab-content py-4 px-5">
+												<div id="sign-in" class="tab-pane fade active show">
+													<h1 class="color-accent-4 text-uppercase fw-bold mb-0">Sign In</h1>
+													<p class="text-dark mb-4">Don't have an account yet? Click Sign up Tab</p>
+													<form method="post">
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Email</label>
+															<input class="w-100 border-0 rounded" type="email" name="email" placeholder="Please enter your email">
+														</div>
+														<div class="form-input">
+															<label class="text-dark mb-2">Password</label>
+															<input class="w-100 border-0 rounded" type="password" name="password" placeholder="Please enter your password">
+														</div>
+														<div class="form-button mt-4">
+															<button class="foreground-bg text-uppercase w-100 btn btn-primary text-white fw-bold border-0 rounded" type="submit">Sign In</button>
+														</div>
+													</form>			
+												</div>
+												<div id="sign-up" class="tab-pane">
+													<h1 class="color-accent-4 text-uppercase fw-bold mb-0">Sign Up</h1>
+													<p class="text-dark mb-4">Already have an account? Click Sign In Tab</p>
+													<form method="post">
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Full Name</label>
+															<input class="w-100 border-0 rounded" type="text" name="first-name" placeholder="Please enter your first and last names">
+														</div>								
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Email</label>
+															<input class="w-100 border-0 rounded" type="email" name="email" placeholder="Please enter your email">
+														</div>
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Password</label>
+															<input class="w-100 border-0 rounded" type="password" name="password" placeholder="Please enter 8-20 characters">
+														</div>
+														<div class="form-input  mb-3">
+															<label class="text-dark mb-2">Confirm Password</label>
+															<input class="w-100 border-0 rounded" type="password" name="confirm-password" placeholder="Please confirm your password">
+														</div>
+														<div class="form-input form-checkbox d-flex align-item-center">									
+															<input type="checkbox" name="agree"><p class="text-dark mb-0 ps-2">I hereby acknowledge that I agree to the Crypto-currency NFT <a href="#">Terms and Conditions</a>  and I've read the <a href="#">Privacy Notice</a></p>
+														</div>
+														<div class="form-button mt-4">
+															<button class="foreground-bg text-uppercase w-100 btn btn-primary text-white fw-bold border-0 rounded" type="submit">Sign Up</button>
+														</div>
+													</form>			
+												</div>
+											</div>
+										</div>
+									</div>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link accent-4" href="#" type="button">
+									<a class="main-wallet nav-link color-accent-4" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#funds-maintenance" aria-controls="funds-maintenance">
 										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wallet" class="svg-inline--fa fa-wallet fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
 											<path fill="currentColor" d="M461.2 128H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h384c8.84 0 16-7.16 16-16 0-26.51-21.49-48-48-48H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h397.2c28.02 0 50.8-21.53 50.8-48V176c0-26.47-22.78-48-50.8-48zM416 336c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z">
 											</path>
 										</svg>
 									</a>
+									<div id="funds-maintenance" class="w-100 h-100 dropdown-menu position-fixed border-0 top-0 start-0 rounded-0 collapse">
+										<div class="funds-body position-fixed h-100 top-0 end-0 py-2 px-3">
+											<div class="funds-header">
+												<div class="container-fluid p-0">
+													<div class="row align-items-center">
+														<div class="col-4">
+															<button class="funds-maintenance-closeBtn bg-white btn-close" type="button" aria-label="Close"></button>
+														</div>
+														<div class="col-4 text-center">
+															<h2 class="color-accent-4 fw-bold mb-0 text-dark">Wallet</h2>
+														</div>
+														<div class="col-4 text-end">
+															<a class="funds-settings" href="#"><i class="text-dark fa fa-cog"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="funds-content mt-3">
+												<div class="container-fluid p-0">
+													<div class="row">
+														<div class="funds-balance w-100 mb-3 text-center">
+															<h3 class="fw-bold text-dark">€0.00</h3>
+														</div>
+														<div class="funds-muiTabs w-100">							
+															<ul class="nav nav-tabs">
+																<li class="px-2 py-1 fw-bold">
+																	<a class="color-accent-4  text-muted active" data-toggle="tab" href="#deposit">Deposit</a>
+																</li>
+																<li class="px-2 py-1 fw-bold">
+																	<a class="color-accent-4  text-muted" data-toggle="tab" href="#withdraw">Withdraw</a>
+																</li>
+																<li class="px-2 py-1 fw-bold">
+																	<a class="color-accent-4  text-muted" data-toggle="tab" href="#withdraw-to">Withdraw to</a>
+																</li>
+															</ul>
+															<div class="tab-content pt-4">
+																<div id="deposit" class="tab-pane in active">
+																	<div class="deposit-local payment-gateway">
+																		<p class="text-dark fw-bold">Deposit with your local currency (Beginner)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li>
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="https://sorare.com/static/media/icon-ramp.902e71f5.svg">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Ramp</p>
+																							<span class="text-white">Fund with Credit Card or Bank Transfer</span>
+																						</div>
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="text-center mt-3 mb-4">
+																		<p class="text-muted fw-bold">Or use one of the following wallet options</p>
+																	</div>	
+																	<div class="deposit-mobile payment-gateway">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - mobile (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/coinbase.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Coinbase Wallet</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="https://sorare.com/static/media/icon-ramp.902e71f5.svg">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Portis</p>
+																						</div>
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="deposit-mobile payment-gateway mt-4">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - browser (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>									
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="what-wallet text-center mt-3">
+																		<a class=" fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#what-wallet-desc" aria-controls="what-wallet-desc" aria-label="Toggle navigation" href="#">What is a wallet?</a>
+																		<div id="what-wallet-desc" class="dropdown-menu border-0 text-center">
+																			<p class="fw-bold text-dark">Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone. For more information about wallets, see this <a href="#">explanation</a>.</p>
+																		</div>
+																	</div>
+																</div>
+																<div id="withdraw" class="tab-pane fade">
+																	<div class="deposit-mobile payment-gateway">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - mobile (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class="d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/coinbase.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Coinbase Wallet</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class="d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="https://sorare.com/static/media/icon-ramp.902e71f5.svg">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Portis</p>
+																						</div>
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="deposit-mobile payment-gateway mt-4">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - browser (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class="d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>									
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="what-wallet text-center mt-3">
+																		<a class="fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#what-wallet-desc1" aria-controls="what-wallet-desc1" aria-label="Toggle navigation" href="#">What is a wallet?</a>
+																		<div id="what-wallet-desc1" class="dropdown-menu border-0 text-center">
+																			<p class="fw-bold text-dark">Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone. For more information about wallets, see this <a href="#">explanation</a>.</p>
+																		</div>
+																	</div>
+																</div>
+																<div id="withdraw-to" class="tab-pane fade">
+																	<div class="withdraw-form">
+																		<form method="post">
+																			<div class="form-input mb-3">
+																				<label class="text-dark fw-bold mb-2">To</label>
+																				<input class="w-100 border-0 rounded" type="text" name="name" placeholder="">
+																			</div>
+																			<div class="form-input fw-bold mb-3">
+																				<label class="text-dark d-block mb-2">Amount</label>
+																				<div class="amount-ETH amount-symbol position-relative w-50 pe-2 float-start">
+																					<input class="w-100 border-0 rounded" type="number" name="amount-ETH" placeholder="1" value="0.00">
+																					<span class="position-absolute fw-normal text-dark top-50">ETH</span>
+																				</div>
+																				<div class="amount-euro amount-symbol position-relative w-50 ps-2 float-start">
+																					<input class="w-100 border-0 rounded" type="number" name="amount-euro" placeholder="1" value="0.00">
+																					<span class="position-absolute fw-normal text-dark top-50">€</span>
+																				</div><div class="clearfix"></div>
+																			</div>
+																			<div class="form-button mt-4">
+																				<button class="foreground-bg text-uppercase w-100 btn btn-primary text-white fw-bold border-0 rounded px-3" type="submit">Submit</button>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="sorare-balance text-center mt-3">
+																		<p class="fw-bold text-dark">Sorare balance <span>€0.00</span></p>
+																	</div>
+																</div>		
+															</div>													
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</li>
 								<li class="nav-item ms-2">
 									<a class="nav-link btn btn-primary border-0 px-3 text-white foreground-bg rounded" href="#" type="button">Connect Wallet</a>
@@ -95,7 +375,7 @@ var x = setInterval(function() {
 	</header>
 	<content>
 		<div class="breadcrumb-banner-section text-center">
-			<h2 class="accent-4 mb-0">Artist Details</h2>
+			<h2 class="color-accent-4 mb-0">Artist Details</h2>
 			<p class="mb-0">Lorem ipsum dolor sit amet</p>
 		</div>
 		<div class="item-details-section mb-5 mt-5">
@@ -108,13 +388,13 @@ var x = setInterval(function() {
 						<div class="item-desc-content mt-3">
 							<ul class="nav nav-tabs p-3 border-bottom">
 								<li class="fw-bold me-4">
-									<a class="accent-4 text-decoration-none active" data-toggle="tab" href="#description-tab">DESCRIPTION</a>
+									<a class="color-accent-4  active" data-toggle="tab" href="#description-tab">DESCRIPTION</a>
 								</li>
 								<li class=" fw-bold me-4">
-									<a class="accent-4 text-decoration-none" data-toggle="tab" href="#history-tab">HISTORY</a>
+									<a class="color-accent-4 " data-toggle="tab" href="#history-tab">HISTORY</a>
 								</li>
 								<li class="fw-bold">
-									<a class="accent-4 text-decoration-none" data-toggle="tab" href="#bids-tab">BIDS</a>
+									<a class="color-accent-4 " data-toggle="tab" href="#bids-tab">BIDS</a>
 								</li>
 							</ul>
 							<div class="tab-content py-3 px-4 bg-white">
@@ -129,7 +409,7 @@ var x = setInterval(function() {
 								<div id="history-tab" class="tab-pane">	
 									history					
 								</div>
-								<div id="bids-tab" class="ccNFT-bids-tab tab-pane">
+								<div id="bids-tab" class=" bids-tab tab-pane">
 									bids
 								</div>
 							</div>
@@ -169,9 +449,9 @@ var x = setInterval(function() {
 					<div class="row py-5">
 						<div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
 							<div class="collection-inner">
-								<h5 class="text-uppercase mb-4 accent-4">Acquire the artworks</h5>
+								<h5 class="text-uppercase mb-4 color-accent-4">Acquire the artworks</h5>
 								<p class="mb-0">MORE FROM</p>
-								<h2 class="mb-0 accent-4">HELENE TCHEN</h2>
+								<h2 class="mb-0 color-accent-4">HELENE TCHEN</h2>
 								<p class="mb-0"><a href="#" class="text-decoration-underline">@helenetchen</a></p>
 								<button class="bid-btn mt-4 btn btn-primary py-3 px-5 lh-1 border-0 foreground-bg fw-bold rounded-pill">More Collection</button>
 							</div>
@@ -191,13 +471,13 @@ var x = setInterval(function() {
 					<a href="#"><img class="w-100" src="images/logo-Uniquire-color-web.png"></a>
 				</div>
 				<div class="footer-desc mb-5">
-					<h2 class="accent-4">Lorem ipsum dolor sit amet</h2>
+					<h2 class="color-accent-4">Lorem ipsum dolor sit amet</h2>
 				</div>
 				<div class="footer-info">
 					<ul class="mb-0 list-unstyled">
-						<li><a class="accent-4 text-decoration-none" href="tel:+7785556831">7785556831</a></li>
-						<li><a class="accent-4 text-decoration-none" href="mailto:inquiry@smith.com">inquiry@smith.com</a></li>
-						<li><a class="accent-4 text-decoration-none" href="https://www.smith.com">www.smith.com</a></li>
+						<li><a class="color-accent-4 " href="tel:+7785556831">7785556831</a></li>
+						<li><a class="color-accent-4 " href="mailto:inquiry@smith.com">inquiry@smith.com</a></li>
+						<li><a class="color-accent-4 " href="https://www.smith.com">www.smith.com</a></li>
 					</ul>
 				</div>
 			</div>
@@ -205,4 +485,5 @@ var x = setInterval(function() {
 	</footer>
 
 </body>
+<script src="js/script.js"></script>
 </html>
