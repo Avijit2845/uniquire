@@ -28,10 +28,13 @@ color:#6C6663 !important;
 .color-accent-2{
 color:#8D8884 !important;
 }
-.color-accent-3{
+.color-accent-3,
+.nft-item-title a:hover,
+.collection-inner p a:hover{
 color:#AEAAA5 !important;
 }
-.color-accent-4,.authentication-tab a{
+.color-accent-4,
+.authentication-tab a{
 color:#4C4442 !important;
 }
 .color-accent-5{
@@ -43,7 +46,9 @@ border-top:2px solid #4C4442 !important;
 .border-bottom{
 border-bottom:2px solid #4C4442 !important;	
 }
-.foreground-bg,.authentication-tab a.active{
+.foreground-bg,
+.authentication-tab a.active,
+.auction-list .list-item .item-body{
 background-color:#4C4442 !important;
 }
 .main-bg{
@@ -186,6 +191,33 @@ border-color: transparent transparent #fff transparent;
 bottom: -19px;
 z-index: 2;
 }
+.auction-list .list-item{
+width:50%;	
+float: left;
+}
+.auction-list .item-desc h6,
+.auction-list .item-desc p,
+.auction-list .item-desc p a{
+font-size: 14px;	
+}
+
+.auction-list .list-item .item-img{
+width: 48px;
+height: 48px;	
+}
+#sign-up .form-input p a{
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 footer{
