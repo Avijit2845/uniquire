@@ -81,8 +81,12 @@ box-shadow: 0 0 10px rgba(3,0,16,.2);
 border-bottom: 1px solid rgba(255,255,255,.1);
 background-color: rgba(241,241,241, .5); 
 }
-.nav-item a i.fa{
-font-size:28px;
+header .site-logo{
+width:100%;
+max-width:280px;	
+}
+i.fa{
+font-size:28px !important;
 }
 
 header #authentication-section,header #funds-maintenance{
@@ -230,3 +234,41 @@ footer .footer-logo{
 width: 100%;
 max-width: 250px;
 }
+
+
+
+@media screen and (max-width:992px){
+	header #main-menu.main-menu{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: #000;
+		padding: 30px 20px;
+		z-index: 9999999;
+		height: 100vh;
+	}
+	#main-menu.main-menu .navbar-nav .nav-link {
+		color:#fff !important;
+	}
+	#main-menu.main-menu .menu-closeBtn{
+		right: 25px;
+		top: 25px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

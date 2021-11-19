@@ -3,27 +3,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Uniquire project</title>
 	<link rel="icon" href="images/uniquire-logo-animation.svg" type="image/gif" sizes="16x16"> 
-	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">	
-	<script src="js/bootstrap.js"></script>	
+	<link rel="stylesheet" href="css/bootstrap.css">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </head>
 <body class="uniquire-page product-page">
-	<header class="position-absolute">
+	<header class="position-absolute w-100 top-0 start-0">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
-				<div class="row w-100 py-2">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-10">
-						<div class="site-logo ms-4">
+				<div class="row w-100 gx-0 px-4 py-2">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="site-logo m-sm-0 m-auto">
 							<a href="#">
 								<img class="w-100 fs-4 fw-bold" alt="COLNSHABLE" src="images/logo-Uniquire-color-web.png">
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-9 col-md-6 col-sm-6 col-2">
-						<div id="main-menu" class="collapse navbar-collapse justify-content-end">
+					<div class="col-lg-9 col-md-6 col-sm-6 col-12 text-center">
+						<button class="mobile-menuBtn navbar-toggler mt-2 float-sm-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-selected="false">
+							<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+						</button>
+						<div id="main-menu" class="main-menu collapse navbar-collapse justify-content-end">
+							<button class="menu-closeBtn d-md-block d-lg-none bg-white btn-close position-absolute" type="button" aria-label="Close"></button>	
 							<ul class="navbar-nav align-items-center">
 								<li class="nav-item">
 									<a class="nav-link text-dark" href="#">Home</a>
@@ -51,15 +54,15 @@
 													<button class="ADV-closeBtn bg-white btn-close" type="button" aria-label="Close"></button>
 												</li>
 												<li class="authentication-tab w-40 p-0 text-center fw-bold ">
-													<a class="signIn-btn text-white text-uppercase d-block  rounded px-2 py-2 active" data-toggle="tab" href="#sign-in">Sign In</a>			
+													<a class="signIn-btn text-white text-uppercase d-block  rounded px-2 py-2 active" href="#" data-bs-toggle="tab" data-bs-target="#sign-in" aria-controls="sign-in">Sign In</a>			
 												</li>
 												<li class="authentication-tab w-40 p-0 text-center fw-bold ">
-													<a class="signUp-btn text-uppercase d-block text-white rounded px-2 py-2" data-toggle="tab" href="#sign-up">Sign Up</a>
+													<a class="signUp-btn text-uppercase d-block text-white rounded px-2 py-2"  href="#" data-bs-toggle="tab" data-bs-target="#sign-up" aria-controls="sign-up">Sign Up</a>
 												</li>
 												<li class="w-10"></li>
 											</ul>
 											<div class="tab-content py-4 px-5">
-												<div id="sign-in" class="tab-pane fade active show">
+												<div id="sign-in" class="tab-pane tab fade active show">
 													<h1 class="color-accent-4 text-uppercase fw-bold mb-0">Sign In</h1>
 													<p class="text-dark mb-4">Don't have an account yet? Click Sign up Tab</p>
 													<form method="post">
@@ -76,7 +79,7 @@
 														</div>
 													</form>			
 												</div>
-												<div id="sign-up" class="tab-pane">
+												<div id="sign-up" class="tab-pane tab">
 													<h1 class="color-accent-4 text-uppercase fw-bold mb-0">Sign Up</h1>
 													<p class="text-dark mb-4">Already have an account? Click Sign In Tab</p>
 													<form method="post">
@@ -141,13 +144,13 @@
 														<div class="funds-muiTabs w-100">							
 															<ul class="nav nav-tabs">
 																<li class="px-2 py-1 fw-bold">
-																	<a class="color-accent-4  text-muted active" data-toggle="tab" href="#deposit">Deposit</a>
+																	<a class="color-accent-4  text-muted active"  href="#" data-bs-toggle="tab" data-bs-target="#deposit" aria-controls="deposit">Deposit</a>
 																</li>
 																<li class="px-2 py-1 fw-bold">
-																	<a class="color-accent-4  text-muted" data-toggle="tab" href="#withdraw">Withdraw</a>
+																	<a class="color-accent-4  text-muted" href="#" data-bs-toggle="tab" data-bs-target="#withdraw" aria-controls="withdraw">Withdraw</a>
 																</li>
 																<li class="px-2 py-1 fw-bold">
-																	<a class="color-accent-4  text-muted" data-toggle="tab" href="#withdraw-to">Withdraw to</a>
+																	<a class="color-accent-4  text-muted" href="#" data-bs-toggle="tab" data-bs-target="#withdraw-to" aria-controls="withdraw-to">Withdraw to</a>
 																</li>
 															</ul>
 															<div class="tab-content pt-4">
@@ -356,13 +359,13 @@
 						<div class="item-desc-content mt-3">
 							<ul class="nav nav-tabs p-3 border-bottom">
 								<li class="fw-bold me-4">
-									<a class="color-accent-4  active" data-toggle="tab" href="#description-tab">DESCRIPTION</a>
+									<a class="color-accent-4  active" href="#" data-bs-toggle="tab" data-bs-target="#description-tab" aria-controls="description-tab">DESCRIPTION</a>
 								</li>
 								<li class=" fw-bold me-4">
-									<a class="color-accent-4 " data-toggle="tab" href="#history-tab">HISTORY</a>
+									<a class="color-accent-4 " href="#" data-bs-toggle="tab" data-bs-target="#history-tab" aria-controls="history-tab">HISTORY</a>
 								</li>
 								<li class="fw-bold">
-									<a class="color-accent-4 " data-toggle="tab" href="#bids-tab">BIDS</a>
+									<a class="color-accent-4 " href="#" data-bs-toggle="tab" data-bs-target="#bids-tab" aria-controls="bids-tab">BIDS</a>
 								</li>
 							</ul>
 							<div class="tab-content p-2 bg-white">
