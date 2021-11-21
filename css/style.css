@@ -88,7 +88,9 @@ max-width:280px;
 i.fa{
 font-size:28px !important;
 }
-
+i.fa.fa-check-circle{
+font-size:15px !important;	
+}
 header #authentication-section,header #funds-maintenance{
 background: rgba(0,0,0, .5);
 }
@@ -237,7 +239,7 @@ max-width: 250px;
 
 
 
-@media screen and (max-width:992px){
+@media screen and (max-width:991px){
 	header #main-menu.main-menu{
 		position: fixed;
 		left: 0;
@@ -255,11 +257,24 @@ max-width: 250px;
 		right: 25px;
 		top: 25px;
 	}
+	.auction-list .list-item {
+		width: 100%;
+	}
+	
 	
 }
-
-
-
+@media screen and (max-width:767px){
+	.auction-list .list-item {
+		width: 50%;
+	}
+	
+}
+@media screen and (max-width:550px){
+	.auction-list .list-item {
+		width: 100%;
+	}
+	
+}
 
 
 
