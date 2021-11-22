@@ -6,6 +6,17 @@
 font-family: 'Poppins';
   src: url('../font/Poppins-Regular.ttf');
 }
+@keyframes headermoveDown{
+	0% { 
+		transform: translateY(-10px); 
+		opacity: 0;
+	}
+	100% { 
+		transform: translateY(0px);  
+		opacity: 1;
+	}
+}
+
 body{
 font-family: 'Poppins';
 }
@@ -40,15 +51,14 @@ color:#4C4442 !important;
 .color-accent-5{
 color:#F3EFEC !important;
 }
-.border-top{
+.uniquire-page .border-top{
 border-top:2px solid #4C4442 !important;
 }
-.border-bottom{
+.uniquire-page .border-bottom{
 border-bottom:2px solid #4C4442 !important;	
 }
 .foreground-bg,
-.authentication-tab a.active,
-.auction-list .list-item .item-body{
+.authentication-tab a.active{
 background-color:#4C4442 !important;
 }
 .main-bg{
@@ -74,22 +84,34 @@ width:40% !important;
 .w-10{
 width:10% !important;	
 }
-
-
-header{
-box-shadow: 0 0 10px rgba(3,0,16,.2);
-border-bottom: 1px solid rgba(255,255,255,.1);
-background-color: rgba(241,241,241, .5); 
-}
-header .site-logo{
-width:100%;
-max-width:280px;	
-}
 i.fa{
 font-size:28px !important;
 }
 i.fa.fa-check-circle{
 font-size:15px !important;	
+}
+
+
+
+.header{
+box-shadow: 0 0 10px rgba(3,0,16,.2);
+border-bottom: 1px solid rgba(255,255,255,.1);
+background-color: rgba(241,241,241, .5); 
+animation-duration: 1s;
+}
+.header .site-logo{
+width:100%;
+max-width:280px;	
+}
+.header.sticky-header{
+animation-name: headermoveDown;
+position: fixed !important;
+z-index: 999999;
+background-color: rgba(241,241,241, 1);
+box-shadow: 0 0 10px rgba(3,0,16,.8);
+}
+.header .mobile-menuBtn{
+	margin-top:-5px;
 }
 header #authentication-section,header #funds-maintenance{
 background: rgba(0,0,0, .5);
@@ -142,7 +164,6 @@ border-radius: 10px;
 overflow: hidden;
 }
 .item-details-section .item-buy-part{
-background: #F3EFEC;
 padding: 35px 40px;
 border-radius: 10px;
 }
@@ -178,7 +199,7 @@ font-size: 15px;
 .item-desc-content .nav a.active{
 position:relative;
 }
-.item-desc-content .nav a.active::before,
+
 .item-desc-content .nav a.active::after{
 content: "";
 left: 50%;
@@ -191,12 +212,7 @@ border-width: 0 12px 15px 12px;
 border-color: transparent transparent #4C4442 transparent;
 bottom: -19px;
 }
-.item-desc-content .nav a.active::before{	
-border-width: 0 9px 11px 9px;
-border-color: transparent transparent #fff transparent;
-bottom: -19px;
-z-index: 2;
-}
+
 .auction-list .list-item{
 width:50%;	
 float: left;
@@ -211,14 +227,24 @@ font-size: 14px;
 width: 48px;
 height: 48px;	
 }
-#sign-up .form-input p a{
-
+.auction-list .item-desc p{
+	font-weight:bold;
+}
+.auction-list .item-desc p a{
+font-weight:normal;
+}
+.auction-list .list-item .item-body{
+background-color:#F3EFEC;
 }
 
-
-
-
-
+.item-buy-part{
+top:78px;
+}
+.auction-list .item-img i.fa.fa-check-circle{
+background: #fff !important;
+line-height: 12px;
+bottom: 4px !important;
+}
 
 
 
@@ -272,6 +298,9 @@ max-width: 250px;
 @media screen and (max-width:550px){
 	.auction-list .list-item {
 		width: 100%;
+	}
+	.header .site-logo {
+		max-width: 200px;
 	}
 	
 }

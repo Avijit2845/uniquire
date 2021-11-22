@@ -10,19 +10,19 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </head>
 <body class="uniquire-page product-page">
-	<header class="position-absolute w-100 top-0 start-0">
+	<header id="mastheader" class="header position-absolute w-100 top-0 start-0">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
-				<div class="row w-100 gx-0 px-4 py-2">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-						<div class="site-logo m-sm-0 m-auto">
+				<div class="row w-100 gx-0 align-items-center px-4 py-2">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-10">
+						<div class="site-logo">
 							<a href="#">
 								<img class="w-100 fs-4 fw-bold" alt="COLNSHABLE" src="images/logo-Uniquire-color-web.png">
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-9 col-md-6 col-sm-6 col-12 text-center">
-						<button class="mobile-menuBtn navbar-toggler mt-2 float-sm-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-selected="false">
+					<div class="col-lg-9 col-md-6 col-sm-6 col-2 text-center">
+						<button class="mobile-menuBtn p-0 navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-selected="false">
 							<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
 						</button>
 						<div id="main-menu" class="main-menu collapse navbar-collapse justify-content-end">
@@ -142,7 +142,7 @@
 															<h3 class="fw-bold text-dark">&euro;0.00</h3>
 														</div>
 														<div class="funds-muiTabs w-100">							
-															<ul class="nav nav-tabs">
+															<ul class="nav nav-tabs border-bottom">
 																<li class="px-2 py-1 fw-bold">
 																	<a class="color-accent-4  text-muted active"  href="#" data-bs-toggle="tab" data-bs-target="#deposit" aria-controls="deposit">Deposit</a>
 																</li>
@@ -353,8 +353,33 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="nft-item-title d-block d-md-none">
+							<h2 class="mb-2">Suenos on @duelmagazine</h2>
+						</div>
 						<div class="item-thumb w-100">
 							<img class="w-100" src="images/product1.png">
+						</div>
+						<div class="nft-item-title text-end d-block d-md-none me-2">
+							<h5 class="mb-0">Helena Tchen <i class="ms-2 fa fa-check-circle"></i></h5>
+							<a class="color-accent-1 text-decoration-underline" href="#">@helenatchen</a>
+						</div>
+						<div class="item-buy-part p-2 rounded-0 d-block d-md-none">
+							<div class="mb-2 mt-0 border-bottom">
+								<h4 class="mb-1">AUCTION LIVE</h4>
+							</div>
+							<div class="item-details-countdown">
+								<h5>Ends In:</h5>
+								<div id='countdown'></div>	
+							</div>
+							<div class="item-price mt-4 mb-3">
+								<h5 class="border-bottom pb-1">CURRENT PRICE:</h5>
+								<h6><span><img src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"> 2,63 ETH</span> <span class="dollar">($ 7,352)</span></h6>
+							</div>
+							<div class="item-auction-btnArea">
+								<button class="place-bid-btn btn btn-primary py-3 lh-1 w-100 border-0 fw-bold foreground-bg rounded">PLACE BID</button>
+								<p class="text-center fw-bold my-1 h5">Or</p>
+								<button class="place-bid-btn btn btn-primary py-3 lh-1 w-100 border-0 fw-bold foreground-bg rounded">BUY NOW FOR 5,5 ETH</button>
+							</div>
 						</div>
 						<div class="item-desc-content mt-3">
 							<ul class="nav nav-tabs p-3 border-bottom">
@@ -384,12 +409,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -397,12 +422,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -410,12 +435,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -423,12 +448,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -436,12 +461,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -449,12 +474,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -462,12 +487,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -475,12 +500,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li><div class="clearfix"></div>
@@ -494,12 +519,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>12.00 ETH</b> 9 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>12.00 ETH</b> 9 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -507,12 +532,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>10.00 ETH</b> 9 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>10.00 ETH</b> 9 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -520,12 +545,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>17.00 ETH</b> 3 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>17.00 ETH</b> 3 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -533,12 +558,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>21.00 ETH</b> 2 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>21.00 ETH</b> 2 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -546,12 +571,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>15.00 ETH</b> 1 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>15.00 ETH</b> 1 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -559,12 +584,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>10.00 ETH</b> 4 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>10.00 ETH</b> 4 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -572,12 +597,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>14.00 ETH</b> 8 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>14.00 ETH</b> 8 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li>
@@ -585,12 +610,12 @@
 												<div class="item-body d-flex align-items-center px-2 rounded py-1">
 													<div class="item-img position-relative">
 														<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
-															<i class="text-white fa fa-check-circle rounded-circle end-0 bottom-0 position-absolute" aria-hidden="true"></i>
+															<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
 														</a> 
 													</div>
 													<div class="item-desc ms-2">
-														<h6 class="color-accent-3 mb-0">Bid placed for <b>12.00 ETH</b> 5 hours ago</h6>
-														<p class="text-white mb-0">by <a class="color-accent-3" href="#">@helenetchen</a></p>
+														<h6 class="color-accent-4 mb-0">Bid placed for <b>12.00 ETH</b> 5 hours ago</h6>
+														<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
 													</div>
 												</div>
 											</li><div class="clearfix"></div>
@@ -600,8 +625,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-						<div class="item-buy-part position-sticky top-0">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12 d-none d-md-block">
+						<div class="item-buy-part position-sticky main-bg">
 							<div class="nft-item-title">
 								<h2 class="mb-0">Suenos on @duelmagazine</h2>
 								<h5 class="mb-0">Helena Tchen <i class="ms-2 fa fa-check-circle"></i></h5>
@@ -672,35 +697,6 @@
 </body>
 <script src="js/script.js"></script>
 <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Nov 26, 2021 15:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("countdown").innerHTML = "<div class='count-col'><p class='number'>" + days + "</p><p>Days</p></div>" 
-  + "<div class='count-col'><p class='number'>" + hours + "</p><p>Hours</p></div>" + 
-  "<div class='count-col'><p class='number'>" + minutes + "</p><p>Mins</p></div>" + "<div class='count-col'><p class='number'>"
-  + seconds + "</p><p>Secs</p></div>";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+dateCountDown();
 </script>
 </html>
