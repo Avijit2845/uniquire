@@ -33,35 +33,31 @@
 		});
 	});	
 	
-function dateCountDown(){
-// Set the date we're counting down to
-var countDownDate = new Date("Nov 26, 2021 15:00:00").getTime();
+function makeTimer() {
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+	//		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+		var endTime = new Date("29 December 2021 23:59:00");			
+			endTime = (Date.parse(endTime) / 1000);
 
-  // Get today's date and time
-  var now = new Date().getTime();
+			var now = new Date();
+			now = (Date.parse(now) / 1000);
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+			var timeLeft = endTime - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			var days = Math.floor(timeLeft / 86400); 
+			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+			if (hours < "10") { hours = "0" + hours; }
+			if (minutes < "10") { minutes = "0" + minutes; }
+			if (seconds < "10") { seconds = "0" + seconds; }
 
-  // Display the result in the element with id="demo"
-  document.getElementById("countdown").innerHTML = "<div class='count-col'><p class='number'>" + days + "</p><p>Days</p></div>" 
-  + "<div class='count-col'><p class='number'>" + hours + "</p><p>Hours</p></div>" + 
-  "<div class='count-col'><p class='number'>" + minutes + "</p><p>Mins</p></div>" + "<div class='count-col'><p class='number'>"
-  + seconds + "</p><p>Secs</p></div>";
+			$("#days, #days").html("<p class='number'>" + days + "</p><p>Days</p>");
+			$("#hours, #hours").html("<p class='number'>" + hours + "</p><p>Hours</p>");
+			$("#minutes, #minutes").html("<p class='number'>" + minutes + "</p><p>Mins</p>");
+			$("#seconds, #seconds").html("<p class='number'>" + seconds + "</p><p>Secs</p>");		
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-}
+	}
+
+setInterval(function() { makeTimer(); }, 1000);

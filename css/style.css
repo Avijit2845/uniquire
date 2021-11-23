@@ -17,7 +17,7 @@ font-family: 'Poppins';
 	}
 }
 
-body{
+body.uniquire-page{
 font-family: 'Poppins';
 }
 h1,h2,h3,h4,h5,h6,.authentication-tab a,.authentication-form form button{
@@ -64,11 +64,11 @@ background-color:#4C4442 !important;
 .main-bg{
 background-color:#F3EFEC !important;
 }
-.foreground-bg:hover,.foreground-bg:focus{
+.btn.foreground-bg:hover,.btn.foreground-bg:focus{
 background-color:#4C4442 !important;
 opacity:.8;
 }
-.main-bg:hover,.main-bg:focus{
+.btn.main-bg:hover,.btn.main-bg:focus{
 background-color:#F3EFEC !important;
 opacity:.8;
 }
@@ -94,10 +94,10 @@ font-size:15px !important;
 
 
 .header{
-box-shadow: 0 0 10px rgba(3,0,16,.2);
-border-bottom: 1px solid rgba(255,255,255,.1);
-background-color: rgba(241,241,241, .5); 
+box-shadow: 0 0 10px rgba(3,0,16,.8);
 animation-duration: 1s;
+background-color: #D0CECB;
+border-bottom:5px solid #AEAAA5;
 }
 .header .site-logo{
 width:100%;
@@ -107,8 +107,6 @@ max-width:280px;
 animation-name: headermoveDown;
 position: fixed !important;
 z-index: 999999;
-background-color: rgba(241,241,241, 1);
-box-shadow: 0 0 10px rgba(3,0,16,.8);
 }
 .header .mobile-menuBtn{
 	margin-top:-5px;
@@ -150,19 +148,6 @@ width: 36px;
     transform: translate(0%,-50%);
     font-size: 15px;
 }
-
-.breadcrumb-banner-section{
-background-image:url(https://demos.codexcoder.com/labartisan/html/nft/enftomark-light/assets/images/banner/pg-header-banner.jpg);
-background-position:center;
-background-repeat:no-repeat;
-background-size:cover;	
-padding-top:150px;
-padding-bottom:100px;
-}
-.item-details-section .item-thumb{
-border-radius: 10px;
-overflow: hidden;
-}
 .item-details-section .item-buy-part{
 padding: 35px 40px;
 border-radius: 10px;
@@ -174,12 +159,15 @@ margin-right:10px;
 }
 #countdown .count-col .number{
 background: #4C4442;
-padding: 10px 20px;
+padding: 8px 15px;
 border-radius: 5px;	
 color:#fff;
 font-size:25px;
 font-weight:bold;
 margin-bottom:5px;
+}
+#countdown .count-col p{
+margin-bottom:0px;	
 }
 .item-details-section .item-price img{
 width:20px;
@@ -195,6 +183,9 @@ font-size: 15px;
 .item-desc-content .nav li a,
 .item-auction-btnArea button{
   font-family: 'Cormorant-Bold';
+}
+.item-desc-content .nav li a{
+color:#212529;
 }
 .item-desc-content .nav a.active{
 position:relative;
@@ -222,7 +213,6 @@ float: left;
 .auction-list .item-desc p a{
 font-size: 14px;	
 }
-
 .auction-list .list-item .item-img{
 width: 48px;
 height: 48px;	
@@ -247,17 +237,23 @@ bottom: 4px !important;
 }
 
 
-
-
-
-
-
 footer{
-background-image:url(../images/footer-bg.png);
-background-repeat:no-repeat;
-background-position:top center;
-background-size:cover;
+background-image: url(../images/footer-3bg.png);
+background-repeat: no-repeat;
+background-position: 0% 78%;
+background-size: cover;
+min-height: 350px;
+align-items: center;
+display: flex;
 }
+footer .footer-logo{
+max-width: 160px !important;
+}
+footer h6{
+font-size:15px;
+font-family: 'Poppins';
+}
+
 footer .footer-logo{
 width: 100%;
 max-width: 250px;
@@ -289,11 +285,20 @@ max-width: 250px;
 	
 	
 }
+@media screen and (max-width:850px){
+#countdown .count-col .number{
+padding: 6px 10px;
+}
+
+}
+
 @media screen and (max-width:767px){
 	.auction-list .list-item {
 		width: 50%;
 	}
-	
+	#countdown .count-col .number{
+padding: 8px 15px;
+}
 }
 @media screen and (max-width:550px){
 	.auction-list .list-item {
@@ -302,13 +307,22 @@ max-width: 250px;
 	.header .site-logo {
 		max-width: 200px;
 	}
-	
+
 }
 
+@media screen and (max-width:400px){
+.item-desc-content .nav a{
+font-size:18px;	
+}
 
+}
 
+@media screen and (max-width:382px){
+#countdown .count-col .number{
+padding: 6px 10px;
+}
 
-
+}
 
 
 
