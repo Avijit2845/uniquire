@@ -20,7 +20,10 @@ font-family: 'Poppins';
 body.uniquire-page{
 font-family: 'Poppins';
 }
-h1,h2,h3,h4,h5,h6,.authentication-tab a,.authentication-form form button{
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6,
+.authentication-tab a,
+.authentication-form form button{
   font-family: 'Cormorant-Bold';
 }
 a,p,li,span{
@@ -32,6 +35,9 @@ text-decoration:none !important;
 input[type="number"] {
     -moz-appearance: textfield;
     appearance: textfield;
+}
+.opacity-0{
+	opacity:0 !important;
 }
 .color-accent-1,a:hover,.funds-muiTabs li a.active{
 color:#6C6663 !important;
@@ -180,7 +186,6 @@ font-weight: bold;
 font-weight: normal;
 font-size: 15px;
 }
-.item-desc-content .nav li a,
 .item-auction-btnArea button{
   font-family: 'Cormorant-Bold';
 }
@@ -191,19 +196,29 @@ color:#212529;
 position:relative;
 }
 
-.item-desc-content .nav a.active::after{
+.item-desc-content .nav a.active::after,
+.pills-tablist .nav a.active::after{
 content: "";
 left: 50%;
 transform: translateX(-50%);
 border-style: solid;
 position: absolute;
-}
-.item-desc-content .nav a.active::after{
 border-width: 0 12px 15px 12px;		
 border-color: transparent transparent #4C4442 transparent;
-bottom: -19px;
 }
-
+.item-desc-content .nav a.active::after{
+bottom: -19px;	
+}
+.pills-tablist .nav a.active::after{
+bottom: -18px;	
+}
+.activity-list-content .seacrh-bar,.activity-list-content select{
+border-bottom-right-radius: calc(0.25rem - 1px);
+border-bottom-left-radius: calc(0.25rem - 1px);
+border-top-left-radius: calc(0.25rem - 1px);
+border-top-right-radius: calc(0.25rem - 1px);
+border: 2px solid #4C4442 !important;
+}
 .auction-list .list-item{
 width:50%;	
 float: left;
@@ -226,7 +241,6 @@ font-weight:normal;
 .auction-list .list-item .item-body{
 background-color:#F3EFEC;
 }
-
 .item-buy-part{
 top:78px;
 }
@@ -235,7 +249,57 @@ background: #fff !important;
 line-height: 12px;
 bottom: 4px !important;
 }
-
+content .profile-banner-section{
+background-image: url(../images/creator-banner-bg.png);
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+min-height: 220px;	
+}
+.pills-tablist .seacrh-bar i{
+font-size: 15px !important;
+top: 50%;
+transform: translate(4px,-50%);
+}
+.card-box .card-foot-img{
+width:26px;
+}
+.card-box .card-foot-price p,
+.card-box .card-foot-right h6,
+.card-box .make-offer-btn,
+.profile-information .author-desc p{
+font-size:14px;
+}
+.card-box .card-foot-right p{
+font-size:12px;	
+}
+.profile-tabContent-col .card-box,
+.profile-section .profile-information,
+.profile-information .avatar-img img{
+border-bottom-right-radius: calc(0.25rem - 1px);
+border-bottom-left-radius: calc(0.25rem - 1px);
+border-top-left-radius: calc(0.25rem - 1px);
+border-top-right-radius: calc(0.25rem - 1px);
+}
+.profile-information .avatar-img{
+max-width:120px;	
+}
+.profile-information .avatar-img i{
+bottom: -4px;
+right: -4px;
+font-size: 28px !important;
+padding: 3px;
+background: #fff;
+line-height: 24px;
+}
+.profile-section .profile-information,
+.profile-information .avatar{
+margin-top:-70px;	
+}
+.profile-section .profile-information{
+top: 150px;	
+}
 
 footer{
 background-image: url(../images/footer-3bg.png);
@@ -259,7 +323,11 @@ width: 100%;
 max-width: 250px;
 }
 
-
+@media screen and (min-width: 992px) and (max-width: 1088px),(max-width: 392px){
+	.pills-tablist .nav li:first-child{
+		margin-bottom:24px;
+	}
+}
 
 @media screen and (max-width:991px){
 	header #main-menu.main-menu{

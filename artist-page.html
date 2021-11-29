@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Uniquire project</title>
+	<link rel="icon" href="images/uniquire-logo-animation.svg" type="image/gif" sizes="16x16"> 
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/bootstrap.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</head>
+<body class="uniquire-page author-profile-page">
+	<header id="mastheader" class="header position-relative w-100 start-0 top-0">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<div class="row w-100 gx-0 align-items-center px-4 py-2">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-10">
+						<div class="site-logo">
+							<a href="#">
+								<img class="w-100 fs-4 fw-bold" alt="COLNSHABLE" src="images/logo-Uniquire-color-web.png">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-6 col-sm-6 col-2 text-center">
+						<button class="mobile-menuBtn p-0 navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-selected="false">
+							<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+						</button>
+						<div id="main-menu" class="main-menu collapse navbar-collapse justify-content-end">
+							<button class="menu-closeBtn d-md-block d-lg-none bg-white btn-close position-absolute" type="button" aria-label="Close"></button>	
+							<ul class="navbar-nav align-items-center">
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Discover</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Activity</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Community</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="user-icon nav-link color-accent-4" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#authentication-section" aria-controls="authentication-section">
+									<i class="fa fa-user"></i>
+									</a>
+									<div id="authentication-section" class="w-100 h-100 dropdown-menu position-fixed border-0 top-0 start-0 rounded-0 collapse" style="">
+										<div class="authentication-form position-fixed h-100 w-100 top-0 end-0">
+											<ul class="nav nav-tabs mt-2 border-0">
+												<li class="w-10 px-2 p-0 d-flex align-items-center">
+													<button class="ADV-closeBtn bg-white btn-close" type="button" aria-label="Close"></button>
+												</li>
+												<li class="authentication-tab w-40 p-0 text-center fw-bold ">
+													<a class="signIn-btn text-white text-uppercase d-block  rounded px-2 py-2 active" href="#" data-bs-toggle="tab" data-bs-target="#sign-in" aria-controls="sign-in">Sign In</a>			
+												</li>
+												<li class="authentication-tab w-40 p-0 text-center fw-bold ">
+													<a class="signUp-btn text-uppercase d-block text-white rounded px-2 py-2"  href="#" data-bs-toggle="tab" data-bs-target="#sign-up" aria-controls="sign-up">Sign Up</a>
+												</li>
+												<li class="w-10"></li>
+											</ul>
+											<div class="tab-content py-4 px-5">
+												<div id="sign-in" class="tab-pane tab fade active show">
+													<h1 class="color-accent-4 text-uppercase fw-bold mb-0">Sign In</h1>
+													<p class="text-dark mb-4">Don't have an account yet? Click Sign up Tab</p>
+													<form method="post">
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Email</label>
+															<input class="w-100 border-0 rounded" type="email" name="email" placeholder="Please enter your email">
+														</div>
+														<div class="form-input">
+															<label class="text-dark mb-2">Password</label>
+															<input class="w-100 border-0 rounded" type="password" name="password" placeholder="Please enter your password">
+														</div>
+														<div class="form-button mt-4">
+															<button class="foreground-bg text-uppercase w-100 btn btn-primary text-white fw-bold border-0 rounded" type="submit">Sign In</button>
+														</div>
+													</form>			
+												</div>
+												<div id="sign-up" class="tab-pane tab">
+													<h1 class="color-accent-4 text-uppercase fw-bold mb-0">Sign Up</h1>
+													<p class="text-dark mb-4">Already have an account? Click Sign In Tab</p>
+													<form method="post">
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Full Name</label>
+															<input class="w-100 border-0 rounded" type="text" name="first-name" placeholder="Please enter your first and last names">
+														</div>								
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Email</label>
+															<input class="w-100 border-0 rounded" type="email" name="email" placeholder="Please enter your email">
+														</div>
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Password</label>
+															<input class="w-100 border-0 rounded" type="password" name="password" placeholder="Please enter 8-20 characters">
+														</div>
+														<div class="form-input  mb-3">
+															<label class="text-dark mb-2">Confirm Password</label>
+															<input class="w-100 border-0 rounded" type="password" name="confirm-password" placeholder="Please confirm your password">
+														</div>
+														<div class="form-input form-checkbox d-flex align-item-center">									
+															<input type="checkbox" name="agree"><p class="color-accent-4 mb-0 ps-2">I hereby acknowledge that I agree to the Crypto-currency NFT <a class="text-dark" href="#">Terms and Conditions</a>  and I've read the <a class="text-dark" href="#">Privacy Notice</a></p>
+														</div>
+														<div class="form-button mt-4">
+															<button class="foreground-bg text-uppercase w-100 btn btn-primary text-white fw-bold border-0 rounded" type="submit">Sign Up</button>
+														</div>
+													</form>			
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="main-wallet nav-link color-accent-4" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#funds-maintenance" aria-controls="funds-maintenance">
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wallet" class="svg-inline--fa fa-wallet fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+											<path fill="currentColor" d="M461.2 128H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h384c8.84 0 16-7.16 16-16 0-26.51-21.49-48-48-48H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h397.2c28.02 0 50.8-21.53 50.8-48V176c0-26.47-22.78-48-50.8-48zM416 336c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z">
+											</path>
+										</svg>
+									</a>
+									<div id="funds-maintenance" class="w-100 h-100 dropdown-menu position-fixed border-0 top-0 start-0 rounded-0 collapse">
+										<div class="funds-body position-fixed h-100 top-0 end-0 py-2 px-3">
+											<div class="funds-header">
+												<div class="container-fluid p-0">
+													<div class="row align-items-center">
+														<div class="col-4">
+															<button class="funds-maintenance-closeBtn bg-white btn-close" type="button" aria-label="Close"></button>
+														</div>
+														<div class="col-4 text-center">
+															<h2 class="color-accent-4 fw-bold mb-0 text-dark">Wallet</h2>
+														</div>
+														<div class="col-4 text-end">
+															<a class="funds-settings" href="#"><i class="text-dark fa fa-cog"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="funds-content mt-3">
+												<div class="container-fluid p-0">
+													<div class="row">
+														<div class="funds-balance w-100 mb-3 text-center">
+															<h3 class="fw-bold text-dark">&euro;0.00</h3>
+														</div>
+														<div class="funds-muiTabs w-100">							
+															<ul class="nav nav-tabs border-bottom">
+																<li class="px-2 py-1 fw-bold">
+																	<a class="color-accent-4  text-muted active"  href="#" data-bs-toggle="tab" data-bs-target="#deposit" aria-controls="deposit">Deposit</a>
+																</li>
+																<li class="px-2 py-1 fw-bold">
+																	<a class="color-accent-4  text-muted" href="#" data-bs-toggle="tab" data-bs-target="#withdraw" aria-controls="withdraw">Withdraw</a>
+																</li>
+																<li class="px-2 py-1 fw-bold">
+																	<a class="color-accent-4  text-muted" href="#" data-bs-toggle="tab" data-bs-target="#withdraw-to" aria-controls="withdraw-to">Withdraw to</a>
+																</li>
+															</ul>
+															<div class="tab-content pt-4">
+																<div id="deposit" class="tab-pane in active">
+																	<div class="deposit-local payment-gateway">
+																		<p class="text-dark fw-bold">Deposit with your local currency (Beginner)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li>
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="https://sorare.com/static/media/icon-ramp.902e71f5.svg">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Ramp</p>
+																							<span class="text-white">Fund with Credit Card or Bank Transfer</span>
+																						</div>
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="text-center mt-3 mb-4">
+																		<p class="text-muted fw-bold">Or use one of the following wallet options</p>
+																	</div>	
+																	<div class="deposit-mobile payment-gateway">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - mobile (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/coinbase.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Coinbase Wallet</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="https://sorare.com/static/media/icon-ramp.902e71f5.svg">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Portis</p>
+																						</div>
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="deposit-mobile payment-gateway mt-4">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - browser (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>									
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="what-wallet text-center mt-3">
+																		<a class=" fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#what-wallet-desc" aria-controls="what-wallet-desc" aria-label="Toggle navigation" href="#">What is a wallet?</a>
+																		<div id="what-wallet-desc" class="dropdown-menu border-0 text-center">
+																			<p class="fw-bold text-dark">Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone. For more information about wallets, see this <a href="#">explanation</a>.</p>
+																		</div>
+																	</div>
+																</div>
+																<div id="withdraw" class="tab-pane fade">
+																	<div class="deposit-mobile payment-gateway">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - mobile (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class="d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/coinbase.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Coinbase Wallet</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class="d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="https://sorare.com/static/media/icon-ramp.902e71f5.svg">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Portis</p>
+																						</div>
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="deposit-mobile payment-gateway mt-4">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - browser (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class="d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>									
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="what-wallet text-center mt-3">
+																		<a class="fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#what-wallet-desc1" aria-controls="what-wallet-desc1" aria-label="Toggle navigation" href="#">What is a wallet?</a>
+																		<div id="what-wallet-desc1" class="dropdown-menu border-0 text-center">
+																			<p class="fw-bold text-dark">Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone. For more information about wallets, see this <a href="#">explanation</a>.</p>
+																		</div>
+																	</div>
+																</div>
+																<div id="withdraw-to" class="tab-pane fade">
+																	<div class="withdraw-form">
+																		<form method="post">
+																			<div class="form-input mb-3">
+																				<label class="text-dark fw-bold mb-2">To</label>
+																				<input class="w-100 border-0 rounded" type="text" name="name" placeholder="">
+																			</div>
+																			<div class="form-input fw-bold mb-3">
+																				<label class="text-dark d-block mb-2">Amount</label>
+																				<div class="amount-ETH amount-symbol position-relative w-50 pe-2 float-start">
+																					<input class="w-100 border-0 rounded" type="number" name="amount-ETH" placeholder="1" value="0.00">
+																					<span class="position-absolute fw-normal text-dark top-50">ETH</span>
+																				</div>
+																				<div class="amount-euro amount-symbol position-relative w-50 ps-2 float-start">
+																					<input class="w-100 border-0 rounded" type="number" name="amount-euro" placeholder="1" value="0.00">
+																					<span class="position-absolute fw-normal text-dark top-50">&euro;</span>
+																				</div><div class="clearfix"></div>
+																			</div>
+																			<div class="form-button mt-4">
+																				<button class="foreground-bg text-uppercase w-100 btn btn-primary text-white fw-bold border-0 rounded px-3" type="submit">Submit</button>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="sorare-balance text-center mt-3">
+																		<p class="fw-bold text-dark">Sorare balance <span>&euro;0.00</span></p>
+																	</div>
+																</div>		
+															</div>													
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item ms-2">
+									<a class="nav-link btn btn-primary border-0 px-3 text-white foreground-bg rounded" href="#" type="button">Connect Wallet</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<content>
+		<div class="profile-banner-section"></div>
+		<div class="profile-section mt-4 mb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-12 col-12">
+						<div class="profile-information position-sticky p-3">
+							<div class="avatar">
+								<a class="avatar-img w-100 d-block rounded position-relative mb-1" href="#">
+									<img class="w-100" src="images/creator-author-avatar.png">
+									<i class="fa fa-check-circle color-accent-4 rounded-circle position-absolute" aria-hidden="true"></i>
+								</a>
+								<h3 class="mb-0">Richard Orlinski</h3>
+								<a class="color-accent-4" href="#">@richard_orlinski</a>
+							</div>
+							<div class="author-desc mt-4">
+								<p>Richard Orlinski sculpts to sublimste reality and create living, beautiful and timeless works of art that arouse emotion in the gaze of the other.</p>
+								<p>Represented by more then 30 galleries in France and abroad, Richard Orlinski has been, since 2015.</p>
+							</div>
+							<div class="author-social mt-4">
+								<h4 class="border-bottom">FOLLOW US</h4>
+								<ul class="list-unstyled rounded mb-0 d-inline-block">
+									<li class="d-inline-block px-2"><a class="d-block color-accent-4" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+									<li class="d-inline-block px-2"><a class="d-block color-accent-4" href="#"><i class="fa fa-list-alt" aria-hidden="true"></i></a></li>
+									<li class="d-inline-block px-2"><a class="d-block color-accent-4" href="#"><i class="fa fa-instagram"></i></a></li>
+									<li class="d-inline-block px-2"><a class="d-block color-accent-4" href="#"><i class="fa fa-twitter"></i></a></li>
+								</ul>
+							</div>
+							<div class="author-footer d-flex align-items-center mt-3">
+								<div class="col-left w-50 float-start">
+									<h2 class="fw-bold mb-0">5320</h2>
+									<p class="mb-0">Followers</p>
+								</div>
+								<div class="col-right w-50 float-start">
+									<button class="follow-btn btn btn-primary w-100 fw-bold border-0 lh-2 py-2 foreground-bg rounded" href="#">FOLLOW</button>
+								</div><div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-8 col-sm-12 col-12 mt-md-0 mt-5">
+						<div class="activity-list-content">
+							<div class="pills-tablist row w-100 m-auto align-items-end py-3 border-bottom">
+								<div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-lg-0 mb-4">
+									<ul class="nav nav-tabs border-0">
+										<li><a class="h4 text-dark px-md-2 px-sm-3 px-2 position-relative active" href="#" data-bs-toggle="tab" data-bs-target="#all-part" aria-controls="all-part">ALL</a></li>
+										<li><a class="h4 text-dark px-md-2 px-sm-3 px-2 position-relative" href="#" data-bs-toggle="tab" data-bs-target="#onAuction-part" aria-controls="onAuction-part">ON AUCTION</a></li>
+										<li><a class="h4 text-dark px-md-2 px-sm-3 px-2 position-relative" href="#" data-bs-toggle="tab" data-bs-target="#new-part" aria-controls="new-part">NEW</a></li>
+										<li><a class="h4 text-dark px-md-2 px-sm-3 px-2 position-relative" href="#" data-bs-toggle="tab" data-bs-target="#sold-part" aria-controls="sold-part">SOLD</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-sm-0 mb-4">
+									<p class="mb-0 opacity-0">search</p>
+									<div class="seacrh-bar position-relative">
+										<i class="fa fa-search position-absolute" aria-hidden="true"></i><input type="text" class="w-100 border-0 py-2 ps-4" placeholder="Search">
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+									<div class="sort-list-box">
+										<h4 class="mb-0">SORT LIST</h4>
+										<select class="w-100 p-2 bg-transparent" name="sort-list">
+											<option>Price Low to High</option>
+											<option>Price High to Low</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="pills-tab-content tab-content">
+								<div id="all-part" class="tab-pane tab active">	
+									<div class="row">
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/kong-baril.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">ON AUCTION</h6>
+														<p class="mb-0 text-dark">ends in 11 days</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/hippo.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">SOLD</h6>
+														<button class="make-offer-btn btn btn-primary border-0 lh-2 py-2 border-0 fw-bold foreground-bg rounded" href="#">MAKE OFFER</button>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/spider.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">RELEASED SOON</h6>
+														<p class="mb-0 text-dark">auction starts in<br>1 days, 2h 3min</p>
+														
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/kong-baril.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">RELEASED SOON</h6>
+														<p class="mb-0 text-dark">auction starts in<br>1 days, 2h 3min</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/spider.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">ON AUCTION</h6>
+														<p class="mb-0 text-dark">ends in 11 days</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/hippo.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">SOLD</h6>
+														<button class="make-offer-btn btn btn-primary border-0 lh-2 py-2 border-0 fw-bold foreground-bg rounded" href="#">MAKE OFFER</button>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="onAuction-part" class="tab-pane tab">	
+									<div class="row">
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/hippo.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">SOLD</h6>
+														<button class="make-offer-btn btn btn-primary border-0 lh-2 py-2 border-0 fw-bold foreground-bg rounded" href="#">MAKE OFFER</button>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/kong-baril.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">ON AUCTION</h6>
+														<p class="mb-0 text-dark">ends in 11 days</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/spider.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">RELEASED SOON</h6>
+														<p class="mb-0 text-dark">auction starts in<br>1 days, 2h 3min</p>
+														
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/hippo.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">SOLD</h6>
+														<button class="make-offer-btn btn btn-primary border-0 lh-2 py-2 border-0 fw-bold foreground-bg rounded" href="#">MAKE OFFER</button>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/kong-baril.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">RELEASED SOON</h6>
+														<p class="mb-0 text-dark">auction starts in<br>1 days, 2h 3min</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/spider.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">ON AUCTION</h6>
+														<p class="mb-0 text-dark">ends in 11 days</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="new-part" class="tab-pane tab">	
+									<div class="row">
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/kong-baril.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">ON AUCTION</h6>
+														<p class="mb-0 text-dark">ends in 11 days</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/hippo.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">SOLD</h6>
+														<button class="make-offer-btn btn btn-primary border-0 lh-2 py-2 border-0 fw-bold foreground-bg rounded" href="#">MAKE OFFER</button>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/spider.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">RELEASED SOON</h6>
+														<p class="mb-0 text-dark">auction starts in<br>1 days, 2h 3min</p>
+														
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/kong-baril.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">RELEASED SOON</h6>
+														<p class="mb-0 text-dark">auction starts in<br>1 days, 2h 3min</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/hippo.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">SOLD</h6>
+														<button class="make-offer-btn btn btn-primary border-0 lh-2 py-2 border-0 fw-bold foreground-bg rounded" href="#">MAKE OFFER</button>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/spider.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">ON AUCTION</h6>
+														<p class="mb-0 text-dark">ends in 11 days</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="sold-part" class="tab-pane tab">	
+									<div class="row">
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/hippo.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">SOLD</h6>
+														<button class="make-offer-btn btn btn-primary border-0 lh-2 py-2 border-0 fw-bold foreground-bg rounded" href="#">MAKE OFFER</button>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/kong-baril.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">ON AUCTION</h6>
+														<p class="mb-0 text-dark">ends in 11 days</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/spider.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">RELEASED SOON</h6>
+														<p class="mb-0 text-dark">auction starts in<br>1 days, 2h 3min</p>
+														
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/kong-baril.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">RELEASED SOON</h6>
+														<p class="mb-0 text-dark">auction starts in<br>1 days, 2h 3min</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/spider.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">ON AUCTION</h6>
+														<p class="mb-0 text-dark">ends in 11 days</p>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-tabContent-col col1 col-lg-4 col-md-12 col-sm-6 col-12 mt-4">
+											<div class="card-box h-100 p-3">
+												<div class="card-img">
+													<img class="w-100" src="images/hippo.png">
+												</div>
+												<div class="card-title border-bottom pb-3">
+													<h4 class="text-dark mt-1 mb-0">Wild Kong Oil</h4>
+													<a class="color-accent-4" href="#">@richard_orlinski</a>
+												</div>
+												<div class="card-foot mt-3">
+													<div class="card-foot-left w-50 float-start">
+														<div class="float-start card-foot-img"><img class="w-100" src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"></div>
+														<div class="float-start card-foot-price ps-1">
+															<p class="text-dark mb-0"><b>2,63 ETH</b><br>($ 7,352)</p>
+														</div>
+													</div>
+													<div class="card-foot-right w-50 text-end float-start">
+														<h6 class="text-dark">SOLD</h6>
+														<button class="make-offer-btn btn btn-primary border-0 lh-2 py-2 border-0 fw-bold foreground-bg rounded" href="#">MAKE OFFER</button>
+													</div><div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</content>
+	<footer>
+		<div class="container">
+			<div class="row py-5">
+				<div class="col-12 col-md-7 text-center">
+					<div class="footer-logo m-auto">
+						<a href="#"><img class="w-100" src="images/logo-Uniquire-color-web.png"></a>
+					</div>
+					<h6 class="fw-bold mt-4 mb-4">SUCCULENT COLLECTION</h6>
+					<button class="place-bid-btn px-5 btn btn-primary py-3 lh-1 border-0 fw-bold foreground-bg rounded">SUMMER SALE</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="js/script.js"></script>
+</html>
