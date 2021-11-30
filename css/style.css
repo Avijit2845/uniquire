@@ -102,7 +102,7 @@ font-size:15px !important;
 .header{
 box-shadow: 0 0 10px rgba(3,0,16,.8);
 animation-duration: 1s;
-background-color: #D0CECB;
+background-color: #f3efec;
 border-bottom:5px solid #AEAAA5;
 }
 .header .site-logo{
@@ -306,21 +306,29 @@ background-image: url(../images/footer-3bg.png);
 background-repeat: no-repeat;
 background-position: 0% 78%;
 background-size: cover;
-min-height: 350px;
-align-items: center;
-display: flex;
-}
-footer .footer-logo{
-max-width: 160px !important;
-}
-footer h6{
-font-size:15px;
-font-family: 'Poppins';
 }
 
-footer .footer-logo{
-width: 100%;
+footer{
+overflow:hidden;	
+}
+footer .foot-logo a{
 max-width: 250px;
+margin-left: auto;
+}
+footer .foot-logo{
+z-index: 9;	
+}
+footer .foot-logo:after{
+content: "";
+min-height: 60px;
+background: #fff;
+right: -37px;
+top: -13px;
+display: block;
+width: 100%;
+position: absolute;
+z-index: -9;	
+max-width: 315px;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1088px),(max-width: 392px){
@@ -351,6 +359,16 @@ max-width: 250px;
 		width: 100%;
 	}
 	
+	
+}
+@media screen and (min-width: 768px) and (max-width:950px){
+	footer .foot-logo a {
+		max-width: 185px;
+	}
+	footer .foot-logo::after {
+	min-height: 52px;
+	}
+
 	
 }
 @media screen and (max-width:850px){
