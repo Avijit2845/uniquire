@@ -250,12 +250,18 @@ line-height: 12px;
 bottom: 4px !important;
 }
 content .profile-banner-section{
-background-image: url(../images/creator-banner-bg.png);
-background-position: top center;
 background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
 min-height: 220px;	
+}
+.author-profile-page content .profile-banner-section{
+background-image: url(../images/creator-banner-bg.png);
+background-position: top center;
+}
+.gallery-page content .profile-banner-section{
+background-image: url(https://d7hftxdivxxvm.cloudfront.net/?resize_to=fill&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FJk2II7-Towxi5cIJOp1r9Q%2Fwide.jpg&width=1440&height=600&quality=80);
+background-position: center;
 }
 .pills-tablist .seacrh-bar i{
 font-size: 15px !important;
@@ -301,18 +307,20 @@ margin-top:-70px;
 top: 150px;	
 }
 
-footer{
-background-image: url(../images/footer-3bg.png);
-background-repeat: no-repeat;
-background-position: 0% 78%;
-background-size: cover;
+footer .foot-col{
+	background:#F3EFEC;
 }
-
+footer .foot-col.foot-col3{
+	background:#ECE7E5;
+}
+footer .row{
+min-height: 220px;
+}
 footer{
 overflow:hidden;	
 }
 footer .foot-logo a{
-max-width: 250px;
+max-width: 240px;
 margin-left: auto;
 }
 footer .foot-logo{
@@ -322,18 +330,21 @@ footer .foot-logo:after{
 content: "";
 min-height: 60px;
 background: #fff;
-right: -37px;
+right: -36px;
 top: -13px;
 display: block;
 width: 100%;
 position: absolute;
-z-index: -9;	
-max-width: 315px;
+z-index: -9;
+max-width: 320px;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1088px),(max-width: 392px){
-	.pills-tablist .nav li:first-child{
-		margin-bottom:24px;
+@media screen and (min-width: 992px) and (max-width: 1088px){
+	.pills-tablist .tablist-col .nav li a{
+		font-size:20px;
+	}
+	.pills-tablist .nav a.active::after {
+		bottom: -19px;
 	}
 }
 
@@ -358,19 +369,18 @@ max-width: 315px;
 	.auction-list .list-item {
 		width: 100%;
 	}
-	
-	
-}
-@media screen and (min-width: 768px) and (max-width:950px){
-	footer .foot-logo a {
-		max-width: 185px;
+	.pills-tablist .tablist-col{
+		border-bottom:2px solid #4C4442; 
 	}
 	footer .foot-logo::after {
-	min-height: 52px;
+		min-height: 50px;
 	}
-
+	footer .foot-logo a {
+		max-width: 160px;
+	}
 	
 }
+
 @media screen and (max-width:850px){
 #countdown .count-col .number{
 padding: 6px 10px;
@@ -385,6 +395,15 @@ padding: 6px 10px;
 	#countdown .count-col .number{
 padding: 8px 15px;
 }
+footer .foot-logo a {
+    margin-left: 0;
+}
+footer .foot-logo::after {
+    right: unset;
+    left: -36px;
+	max-width: 230px;
+}
+
 }
 @media screen and (max-width:550px){
 	.auction-list .list-item {
@@ -404,10 +423,15 @@ font-size:18px;
 }
 
 @media screen and (max-width:382px){
-#countdown .count-col .number{
-padding: 6px 10px;
-}
-
+	#countdown .count-col .number{
+	padding: 6px 10px;
+	}
+	.pills-tablist .tablist-col .nav li a{
+		font-size:18px;
+	}
+	.pills-tablist .nav a.active::after {
+		bottom: -19px;
+	}
 }
 
 
