@@ -61,3 +61,98 @@ function makeTimer() {
 	}
 
 setInterval(function() { makeTimer(); }, 1000);
+
+		
+//featured galleries carousel
+jQuery("#featured-galleries-slider").owlCarousel({
+  autoplay: false, 
+  margin: 0,
+  loop: true,
+  responsiveClass: true,
+  autoHeight: true,
+  autoplayTimeout: 1200,
+  smartSpeed: 300,
+  nav: true,
+  dots: false,
+  autoplayHoverPause:true,
+  responsive: {
+    0: {		
+      items: 1
+    },
+
+    600: {		
+      items: 2
+    },
+
+    1024: {
+      items: 3
+    },
+
+    1366: {
+      items:4
+    }
+  }
+});
+
+//trendings artists carousel
+jQuery("#trendings-artists-slider").owlCarousel({
+  autoplay: false, 
+  margin: 0,
+  loop: true,
+  responsiveClass: true,
+  autoHeight: true,
+  autoplayTimeout: 1200,
+  smartSpeed: 300,
+  nav: true,
+  dots: false,
+  autoplayHoverPause:true,
+  responsive: {
+    0: {		
+      items: 2
+    },
+
+    600: {		
+      items: 3
+    },
+
+    1024: {
+      items: 4
+    },
+
+    1366: {
+      items:6
+    }
+  }
+});
+
+
+//leading artists carousel
+jQuery("#leading-artists-slider").owlCarousel({
+  autoplay: false, 
+  margin: 0,
+  loop: true,
+  responsiveClass: true,
+  autoHeight: true,
+  autoplayTimeout: 1200,
+  smartSpeed: 300,
+  nav: true,
+  dots: false,
+  autoplayHoverPause:true,
+  responsive: {
+    0: {		
+      items: 1
+    },
+
+    600: {		
+      items: 1
+    },
+
+    1024: {
+      items: 2
+    },
+
+    1366: {
+      items:3
+    }
+  }
+});

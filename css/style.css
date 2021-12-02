@@ -306,6 +306,84 @@ margin-top:-70px;
 .profile-section .profile-information{
 top: 150px;	
 }
+.featured-galleries-slider .slider-box p,
+.leading-artists-slider .slider-box p{
+font-size:13px;
+}
+.featured-galleries-slider .owl-nav button span,
+.trendings-artists-slider .owl-nav button span,
+.leading-artists-slider .owl-nav button span{
+font-size:0px;
+background-repeat:no-repeat;
+background-position:center;
+background-size:100%;
+width: 100%;
+display: block;
+height: 100%;
+}
+.featured-galleries-slider .owl-nav button.owl-prev span,
+.trendings-artists-slider .owl-nav button.owl-prev span,
+.leading-artists-slider .owl-nav button.owl-prev span{
+background-image:url(../images/arrow-left.png)
+}
+.featured-galleries-slider .owl-nav button.owl-next span,
+.trendings-artists-slider .owl-nav button.owl-next span,
+.leading-artists-slider .owl-nav button.owl-next span{
+background-image:url(../images/arrow-right.png)
+}
+#featured-galleries-slider .owl-nav button,
+#trendings-artists-slider .owl-nav button,
+#leading-artists-slider .owl-nav button{
+width: 30px;
+height: 70px;
+background: rgba(255,255,255, .4);
+border-radius: 0;
+padding-left: 5px !important;
+padding-right: 5px !important;
+}
+#featured-galleries-slider .owl-nav button:hover,
+#trendings-artists-slider .owl-nav button:hover,
+#leading-artists-slider .owl-nav button:hover{
+background: rgba(255,255,255, .8);	
+}
+#trendings-artists-slider .owl-nav button{
+width: 25px;
+height: 60px;
+}
+#leading-artists-slider .owl-nav button{
+width: 30px;
+height: 80px;
+}
+.featured-galleries-slider.owl-carousel .owl-nav button.owl-prev,
+.trendings-artists-slider.owl-carousel .owl-nav button.owl-prev{
+    left: 30px;
+}
+.featured-galleries-slider.owl-carousel .owl-nav button.owl-next,
+.trendings-artists-slider.owl-carousel .owl-nav button.owl-next{
+   right: 30px;
+}
+.leading-artists-slider.owl-carousel .owl-nav button.owl-prev{
+    left: 48px;
+}
+.leading-artists-slider.owl-carousel .owl-nav button.owl-next{
+   right: 48px;
+}
+a.slider-box:hover .text-dark{
+	color:#6C6663 !important;
+}
+.trendings-artists-slider a.slider-box .img-box{
+height:130px;	
+}
+.leading-artists-content ul li span{
+width:22px;
+height:22px;
+}
+.leading-artists .leading-artists-slider{
+background-image:url(../images/leading-artists-slider-bg.png);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;	
+}
 
 footer .foot-col{
 	background:#F3EFEC;
@@ -371,6 +449,7 @@ max-width: 320px;
 	}
 	.pills-tablist .tablist-col{
 		border-bottom:2px solid #4C4442; 
+		margin-bottom:15px;
 	}
 	footer .foot-logo::after {
 		min-height: 50px;
@@ -382,9 +461,9 @@ max-width: 320px;
 }
 
 @media screen and (max-width:850px){
-#countdown .count-col .number{
-padding: 6px 10px;
-}
+	#countdown .count-col .number{
+		padding: 6px 10px;
+	}
 
 }
 
@@ -393,17 +472,16 @@ padding: 6px 10px;
 		width: 50%;
 	}
 	#countdown .count-col .number{
-padding: 8px 15px;
-}
-footer .foot-logo a {
-    margin-left: 0;
-}
-footer .foot-logo::after {
-    right: unset;
-    left: -36px;
-	max-width: 230px;
-}
-
+		padding: 8px 15px;
+	}
+	footer .foot-logo a {
+		margin-left: 0;
+	}
+	footer .foot-logo::after {
+		right: unset;
+		left: -36px;
+		max-width: 230px;
+	}
 }
 @media screen and (max-width:550px){
 	.auction-list .list-item {
@@ -412,20 +490,22 @@ footer .foot-logo::after {
 	.header .site-logo {
 		max-width: 200px;
 	}
-
 }
 
 @media screen and (max-width:400px){
-.item-desc-content .nav a{
-font-size:18px;	
-}
-
+	.item-desc-content .nav a{
+		font-size:18px;	
+	}
 }
 
 @media screen and (max-width:382px){
 	#countdown .count-col .number{
-	padding: 6px 10px;
+		padding: 6px 10px;
 	}
+	
+}
+
+@media screen and (max-width:392px){
 	.pills-tablist .tablist-col .nav li a{
 		font-size:18px;
 	}
@@ -433,8 +513,6 @@ font-size:18px;
 		bottom: -19px;
 	}
 }
-
-
 
 
 
