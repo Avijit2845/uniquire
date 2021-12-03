@@ -10,28 +10,30 @@
 	  });
 	});
 	
-	
-//When the user click wallet icon, execute this script 
+
 	$(document).ready(function(){
+		//When the user click wallet icon, execute this script 	
 		$(".main-wallet, .user-icon").click(function(){
 			 $("body").toggleClass("overflow-hidden");
 		});
-	});
-	
-	
-//When the user click close button, execute this script 	
-	$(document).ready(function(){
+		
+		//When the user click close button, execute this script 
 		$(".funds-maintenance-closeBtn, .ADV-closeBtn").click(function(){
 			 $("body").removeClass("overflow-hidden");
 			 $("#funds-maintenance, #authentication-section").removeClass("show");
 		});
-	});
-	
-	$(document).ready(function(){
+		
+		//menu close button
 		$(".menu-closeBtn").click(function(){
 			 $(".main-menu").removeClass("show");
 		});
-	});	
+		//authentication form 
+		$("#signUp-btn, #signIn-btn").click(function(){
+			 $("#sign-up, #sign-in").toggleClass("show");
+		});
+		
+	});
+	
 	
 function makeTimer() {
 
@@ -108,7 +110,7 @@ jQuery("#trendings-artists-slider").owlCarousel({
   autoplayHoverPause:true,
   responsive: {
     0: {		
-      items: 2
+      items: 1
     },
 
     600: {		
@@ -120,7 +122,7 @@ jQuery("#trendings-artists-slider").owlCarousel({
     },
 
     1366: {
-      items:6
+      items:5
     }
   }
 });
