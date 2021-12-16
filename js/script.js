@@ -31,6 +31,16 @@
 		$("#signUp-btn, #signIn-btn").click(function(){
 			 $("#sign-up, #sign-in").toggleClass("show");
 		});
+		//popup display
+		$(".lot-info-btn").click(function(){
+			$("#lot-info-popup").addClass("show d-block");
+			$(".system-middle-part-inner").addClass("fade");
+		});
+		//popup display close
+		$(".lot-info-popup-closeBtn").click(function(){
+			$("#lot-info-popup").removeClass("show d-block");
+			$(".system-middle-part-inner").removeClass("fade");
+		});
 		
 	});
 	

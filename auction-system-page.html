@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Uniquire project</title>
+	<link rel="icon" href="images/uniquire-logo-animation.svg" type="image/gif" sizes="16x16"> 
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/bootstrap.css">	
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+</head>
+<body class="uniquire-page auction-system-page">
+	<header id="mastheader" class="header position-relative w-100 start-0 top-0">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<div class="row w-100 gx-0 align-items-center px-4 py-2">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-10">
+						<div class="site-logo">
+							<a href="#">
+								<img class="w-100 fs-4 fw-bold" alt="COLNSHABLE" src="images/logo-Uniquire-color-web.png">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-6 col-sm-6 col-2 text-center">
+						<button class="mobile-menuBtn p-0 navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-selected="false">
+							<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+						</button>
+						<div id="main-menu" class="main-menu collapse navbar-collapse justify-content-end">
+							<button class="menu-closeBtn d-md-block d-lg-none bg-white btn-close position-absolute" type="button" aria-label="Close"></button>	
+							<ul class="navbar-nav align-items-center">
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Discover</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Activity</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Community</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="user-icon nav-link color-accent-4" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#authentication-section" aria-controls="authentication-section">
+									<i class="fa fa-user"></i>
+									</a>
+									<div id="authentication-section" class="w-100 h-100 dropdown-menu position-fixed border-0 top-0 start-0 rounded-0 collapse" style="">
+										<div class="authentication-form position-fixed h-100 w-100 top-0 end-0">
+											<div class="px-2 p-0">
+												<button class="ADV-closeBtn bg-white btn-close" type="button" aria-label="Close"></button>
+											</div>	
+											<div class="form-inner pt-2 pb-4 px-5">
+												<div id="sign-in" class="show">
+													<h1 class="color-accent-4 text-uppercase fw-bold">Sign In</h1>
+													<form method="post">
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Email</label>
+															<input class="w-100 border-0 rounded" type="email" name="email" placeholder="Please enter your email">
+														</div>
+														<div class="form-input">
+															<label class="text-dark mb-2">Password</label>
+															<input class="w-100 border-0 rounded" type="password" name="password" placeholder="Please enter your password">
+														</div>
+														<div class="form-button mt-4">
+															<button class="foreground-bg text-uppercase w-100 btn btn-primary text-white fw-bold border-0 rounded" type="submit">Sign In</button>
+														</div>
+														<p class="text-dark mt-2 mb-0">Don't have an account yet? Click <a href="#" id="signUp-btn" class="text-dark text-decoration-underline">Sign up</a></p>
+													</form>			
+												</div>
+												<div id="sign-up">
+													<h1 class="color-accent-4 text-uppercase fw-bold">Sign Up</h1>
+													<form method="post">
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Full Name</label>
+															<input class="w-100 border-0 rounded" type="text" name="first-name" placeholder="Please enter your first and last names">
+														</div>								
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Email</label>
+															<input class="w-100 border-0 rounded" type="email" name="email" placeholder="Please enter your email">
+														</div>
+														<div class="form-input mb-3">
+															<label class="text-dark mb-2">Password</label>
+															<input class="w-100 border-0 rounded" type="password" name="password" placeholder="Please enter 8-20 characters">
+														</div>
+														<div class="form-input  mb-3">
+															<label class="text-dark mb-2">Confirm Password</label>
+															<input class="w-100 border-0 rounded" type="password" name="confirm-password" placeholder="Please confirm your password">
+														</div>
+														<div class="form-input form-checkbox d-flex align-item-center">									
+															<input type="checkbox" name="agree"><p class="color-accent-4 mb-0 ps-2">I hereby acknowledge that I agree to the Crypto-currency NFT <a class="text-dark" href="#">Terms and Conditions</a>  and I've read the <a class="text-dark" href="#">Privacy Notice</a></p>
+														</div>
+														<div class="form-button mt-4">
+															<button class="foreground-bg text-uppercase w-100 btn btn-primary text-white fw-bold border-0 rounded" type="submit">Sign Up</button>
+														</div>
+														<p class="text-dark mt-2 mb-0">Already have an account? Click
+															<a href="#" id="signIn-btn" class="text-dark text-decoration-underline">Sign In</a>			
+														</p>
+													</form>	
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="main-wallet nav-link color-accent-4" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#funds-maintenance" aria-controls="funds-maintenance">
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wallet" class="svg-inline--fa fa-wallet fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+											<path fill="currentColor" d="M461.2 128H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h384c8.84 0 16-7.16 16-16 0-26.51-21.49-48-48-48H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h397.2c28.02 0 50.8-21.53 50.8-48V176c0-26.47-22.78-48-50.8-48zM416 336c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z">
+											</path>
+										</svg>
+									</a>
+									<div id="funds-maintenance" class="w-100 h-100 dropdown-menu position-fixed border-0 top-0 start-0 rounded-0 collapse">
+										<div class="funds-body position-fixed h-100 top-0 end-0 py-2 px-3">
+											<div class="funds-header">
+												<div class="container-fluid p-0">
+													<div class="row align-items-center">
+														<div class="col-4">
+															<button class="funds-maintenance-closeBtn bg-white btn-close" type="button" aria-label="Close"></button>
+														</div>
+														<div class="col-4 text-center">
+															<h2 class="color-accent-4 fw-bold mb-0 text-dark">Wallet</h2>
+														</div>
+														<div class="col-4 text-end">
+															<a class="funds-settings" href="#"><i class="text-dark fa fa-cog"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="funds-content mt-3">
+												<div class="container-fluid p-0">
+													<div class="row">
+														<div class="funds-balance w-100 mb-3 text-center">
+															<h3 class="fw-bold text-dark">&euro;0.00</h3>
+														</div>
+														<div class="funds-muiTabs w-100">							
+															<ul class="nav nav-tabs border-bottom">
+																<li class="px-2 py-1 fw-bold">
+																	<a class="color-accent-4 text-muted active"  href="#" data-bs-toggle="tab" data-bs-target="#deposit" aria-controls="deposit">Deposit</a>
+																</li>
+																<li class="px-2 py-1 fw-bold">
+																	<a class="color-accent-4  text-muted" href="#" data-bs-toggle="tab" data-bs-target="#withdraw" aria-controls="withdraw">Withdraw</a>
+																</li>
+																<li class="px-2 py-1 fw-bold">
+																	<a class="color-accent-4  text-muted" href="#" data-bs-toggle="tab" data-bs-target="#withdraw-to" aria-controls="withdraw-to">Withdraw to</a>
+																</li>
+															</ul>
+															<div class="tab-content pt-4">
+																<div id="deposit" class="tab-pane fade active show">
+																	<div class="deposit-local payment-gateway">
+																		<p class="text-dark fw-bold">Deposit with your local currency (Beginner)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li>
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="https://sorare.com/static/media/icon-ramp.902e71f5.svg">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Ramp</p>
+																							<span class="text-white">Fund with Credit Card or Bank Transfer</span>
+																						</div>
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="text-center mt-3 mb-4">
+																		<p class="text-muted fw-bold">Or use one of the following wallet options</p>
+																	</div>	
+																	<div class="deposit-mobile payment-gateway">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - mobile (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/coinbase.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Coinbase Wallet</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="https://sorare.com/static/media/icon-ramp.902e71f5.svg">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Portis</p>
+																						</div>
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="deposit-mobile payment-gateway mt-4">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - browser (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>									
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="what-wallet text-center mt-3">
+																		<a class=" fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#what-wallet-desc" aria-controls="what-wallet-desc" aria-label="Toggle navigation" href="#">What is a wallet?</a>
+																		<div id="what-wallet-desc" class="position-relative dropdown-menu border-0 text-center">
+																			<p class="fw-bold text-dark">Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone. For more information about wallets, see this <a href="#">explanation</a>.</p>
+																		</div>
+																	</div>
+																</div>
+																<div id="withdraw" class="tab-pane fade">
+																	<div class="deposit-mobile payment-gateway">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - mobile (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class=" d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class="d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/coinbase.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Coinbase Wallet</p>
+																						</div>
+																					</a>
+																				</li>
+																				<li class="mb-2">
+																					<a class="d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="https://sorare.com/static/media/icon-ramp.902e71f5.svg">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Portis</p>
+																						</div>
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="deposit-mobile payment-gateway mt-4">
+																		<p class="text-dark fw-bold">Deposit using an ETH wallet - browser (Advanced)</p>
+																		<div class="deposit-local-list payment-gateway-list">
+																			<ul class="list-unstyled">
+																				<li class="mb-2">
+																					<a class="d-flex align-items-center" href="#">
+																						<div class="gateway-img">
+																							<img class="w-100" src="images/w.png">
+																						</div>
+																						<div class="gateway-title ms-3">
+																							<p class="fw-bold text-white mb-0">Wallet Connect</p>
+																						</div>
+																					</a>
+																				</li>									
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="what-wallet text-center mt-3">
+																		<a class="fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#what-wallet-desc1" aria-controls="what-wallet-desc1" aria-label="Toggle navigation" href="#">What is a wallet?</a>
+																		<div id="what-wallet-desc1" class="position-relative dropdown-menu border-0 text-center">
+																			<p class="fw-bold text-dark">Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone. For more information about wallets, see this <a href="#">explanation</a>.</p>
+																		</div>
+																	</div>
+																</div>
+																<div id="withdraw-to" class="tab-pane fade">
+																	<div class="withdraw-form">
+																		<form method="post">
+																			<div class="form-input mb-3">
+																				<label class="text-dark fw-bold mb-2">To</label>
+																				<input class="w-100 border-0 rounded" type="text" name="name" placeholder="">
+																			</div>
+																			<div class="form-input fw-bold mb-3">
+																				<label class="text-dark d-block mb-2">Amount</label>
+																				<div class="amount-ETH amount-symbol position-relative w-50 pe-2 float-start">
+																					<input class="w-100 border-0 rounded" type="number" name="amount-ETH" placeholder="1" value="0.00">
+																					<span class="position-absolute fw-normal text-dark top-50">ETH</span>
+																				</div>
+																				<div class="amount-euro amount-symbol position-relative w-50 ps-2 float-start">
+																					<input class="w-100 border-0 rounded" type="number" name="amount-euro" placeholder="1" value="0.00">
+																					<span class="position-absolute fw-normal text-dark top-50">&euro;</span>
+																				</div><div class="clearfix"></div>
+																			</div>
+																			<div class="form-button mt-4">
+																				<button class="foreground-bg text-uppercase w-100 btn btn-primary text-white fw-bold border-0 rounded px-3" type="submit">Submit</button>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="sorare-balance text-center mt-3">
+																		<p class="fw-bold text-dark">Sorare balance <span>&euro;0.00</span></p>
+																	</div>
+																</div>		
+															</div>													
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item ms-2">
+									<a class="nav-link btn btn-primary border-0 px-3 text-white foreground-bg rounded" href="#" type="button">Connect Wallet</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<content>
+		<div class="auction-system-area">
+			<div class="container-fluid my-5">
+				<div class="row">
+					<div class="system-left-part col-lg-3 col-md-3 col-sm-12 col-12">
+						<div class="system-left-part-inner position-sticky">
+							<div class="desc">
+								<p>Van Ham: Contemporary, Post War, and NFT-Auction Gavin Evens</p>
+							</div>
+							<div class="current-lot">
+								<div class="titleNvalue d-flex align-items-center">
+									<h4 class="w-80 mb-0">CURRENT LOT</h4>
+									<p class="w-20 mb-0 text-center">142</p>
+								</div>
+								<div class="auction-list mt-2">
+									<ul class="list-unstyled mb-2">
+										<li class="list-item item-1 p-1">
+											<div class="item-body d-flex align-items-center px-2 rounded py-1">
+												<div class="item-img position-relative">
+													<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+														<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+													</a> 
+												</div>
+												<div class="item-desc ms-2">
+													<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+													<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+												</div>
+											</div>
+										</li>
+									</ul>							
+								</div>
+							</div>
+							<div class="lots-list">
+								<div class="titleNvalue d-flex align-items-center border-bottom">
+									<h4 class="w-20 mb-0">LOTS</h4>
+									<ul class="w-80 mb-0 justify-content-center nav nav-tabs py-3 px-2">
+										<li class="">
+											<a class="h6 link-dark active" href="#" data-bs-toggle="tab" data-bs-target="#upcoming-tab" aria-controls="upcoming-tab">UPCOMING</a>
+										</li>
+										<li class="ms-4">
+											<a class="h6 link-dark" href="#" data-bs-toggle="tab" data-bs-target="#previous-tab" aria-controls="previous-tab">PREVIOUS</a>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-content mt-3 px-2 bg-white">
+									<div id="upcoming-tab" class="tab-pane active">	
+										<div class="auction-list">
+											<ul class="list-unstyled mb-2">
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li><div class="clearfix"></div>
+											</ul>							
+										</div>			
+									</div>
+									<div id="previous-tab" class="tab-pane">	
+										<div class="auction-list">
+											<ul class="list-unstyled mb-2">
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>15.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>12.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>14.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>9.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li>
+												<li class="list-item item-1 p-1">
+													<div class="item-body d-flex align-items-center px-2 rounded py-1">
+														<div class="item-img position-relative">
+															<a class="d-block position-relative" href="#"><img class="rounded-circle w-100" src="images/dikasso.jpg">
+																<i class="color-accent-4 fa fa-check-circle rounded-circle end-0 position-absolute" aria-hidden="true"></i>
+															</a> 
+														</div>
+														<div class="item-desc ms-2">
+															<h6 class="color-accent-4 mb-0">Bid placed for <b>11.00 ETH</b> 4 hours ago</h6>
+															<p class="color-accent-4 mb-0">by <a class="color-accent-4" href="#">@helenetchen</a></p>
+														</div>
+													</div>
+												</li><div class="clearfix"></div>
+											</ul>							
+										</div>			
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="system-middle-part col-lg-6 col-md-6 col-sm-12 col-12 position-relative">
+						<div id="lot-info-popup" class="lot-info-popup fade bg-white p-2 position-sticky">
+							<div class="popup-body">
+								<div class="row">
+									<button class="lot-info-popup-closeBtn bg-white btn-close position-absolute me-3 mt-3 top-0 end-0" type="button" aria-label="Close"></button>
+									<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+										<div class="img-box">
+											<img class="w-100" src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=623&height=800&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FZO6E5wpe8DEypdRtkqLHow%2Fnormalized.jpg">
+										</div>
+									</div>
+									<div class="col-lg-9 col-md-9 col-sm-8 col-12">
+										<div class="author-info">
+											<h5 class="mb-0 fw-bold">Peter Zimmermann</h5>
+											<p class="address w-100 color-accent-4 fst-italic">A-T-Flyer, 2001 Synthetic resin on canvas 78 7/10 x 59 1/10 in 200 x 150 cm</p>
+											<p class="color-accent-4 mb-0">This work has a <b>Buyer's Premium</b></p>
+										</div>
+									</div>
+									<div class="col-10 mt-5">
+										<a class="text-dark fw-bold d-flex justify-content-between" href="#"><span>View peter zimmermann on artsy</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="system-middle-part-inner">
+							<div class="live-post mb-5">
+								<div class="img-box text-center">
+									<img src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=600&height=450&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FjbvA8_RPe3r78etMnhXknQ%2Fwide.jpg">
+								</div>
+								<div class="text-center mt-4">
+									<button class="lot-info-btn btn btn-primary py-3 px-5 lh-1 border-0 fw-bold foreground-bg rounded">LOT INFORMATION</button>
+								</div>
+							</div>
+							<div class="live-post mb-5">
+								<div class="img-box text-center">
+									<img src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=623&height=800&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FZO6E5wpe8DEypdRtkqLHow%2Fnormalized.jpg">
+								</div>
+								<div class="text-center mt-4">
+									<button class="lot-info-btn btn btn-primary py-3 px-5 lh-1 border-0 fw-bold foreground-bg rounded">LOT INFORMATION</button>
+								</div>
+							</div>
+							<div class="live-post mb-5">
+								<div class="img-box text-center">
+									<img src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=575&height=800&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F0pXPSKXi9j1oHinqF-miPw%2Fnormalized.jpg">
+								</div>
+								<div class="text-center mt-4">
+									<button class="lot-info-btn btn btn-primary py-3 px-5 lh-1 border-0 fw-bold foreground-bg rounded">LOT INFORMATION</button>
+								</div>
+							</div>
+							<div class="live-post mb-5">
+								<div class="img-box text-center">
+									<img src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=623&height=800&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Ftf-PO1G-KS3PV2D5BpUOww%2Fnormalized.jpg">
+								</div>
+								<div class="text-center mt-4">
+									<button class="lot-info-btn btn btn-primary py-3 px-5 lh-1 border-0 fw-bold foreground-bg rounded">LOT INFORMATION</button>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="system-right-part col-lg-3 col-md-3 col-sm-12 col-12">
+						<div class="system-right-part-inner position-sticky">
+							<div class="author-info">
+								<h4 class="mb-3">LOT 142</h4>
+								<h5 class="mb-0 fw-bold">Peter Zimmermann</h5>
+								<p class="address w-100 color-accent-4 fst-italic">A-T-Flyer, 2001 Synthetic resin on canvas 78 7/10 x 59 1/10 in 200 x 150 cm</p>
+							</div>
+							<div class="estimate d-flex mb-2 align-items-center">
+								<h4 class="w-40">Estimate:</h4>
+								<h4 class="w-60 text-center">&euro;9,000-&euro;12,000</h4>
+							</div>
+							<p class="color-accent-4">This work has a <b>Buyer's Premium</b></p>
+							<div class="bid-count d-flex align-items-center border-bottom pb-2">
+								<h4 class="w-80 mb-0">BID COUNT</h4>
+								<p class="w-20 mb-0 text-center">11</p>
+							</div>
+							<div class="reg-for-sale pt-4 pb-3 border-bottom">
+								<button class="reg-for-sale-btn btn btn-primary py-3 lh-1 w-100 border-0 fw-bold foreground-bg rounded">REGISTRATION CLOSE</button>
+								<p class="color-accent-4 mt-1 mb-0">Already registered for this sale? <a class="text-decoration-underline text-dark" href="#">Log In</a></p>
+							</div>
+							<div class="floor-list pe-3 mt-4">
+								<div class="list-item">
+									<div class="d-flex align-items-center border-bottom py-2">
+										<h6 class="w-60 mb-0">FLOOR</h6>
+										<p class="w-40 mb-0 text-end me-2">&euro;16,000</p>
+									</div>
+									<div class="d-flex align-items-center py-2">
+										<h6 class="w-60 orange-color mb-0">FINAL CALL</h6>
+										<p class="w-40 orange-color mb-0 text-end me-2"><i class="fa fa-exclamation-circle"></i></p>
+									</div>
+									<div class="d-flex align-items-center py-2">
+										<h6 class="w-60 yellow-color mb-0">FAIR WARNING</h6>
+										<p class="w-40 mb-0 text-end me-2"><i class="fa yellow-color fa-exclamation-circle"></i></p>
+									</div>
+								</div>
+								<div class="list-item">
+									<div class="d-flex align-items-center border-bottom py-2">
+										<h6 class="w-60 mb-0">FLOOR</h6>
+										<p class="w-40 mb-0 text-end me-2">&euro;15,000</p>
+									</div>
+									<div class="d-flex align-items-center py-2">
+										<h6 class="w-60 orange-color mb-0">FINAL CALL</h6>
+										<p class="w-40 orange-color mb-0 text-end me-2"><i class="fa fa-exclamation-circle"></i></p>
+									</div>
+									<div class="d-flex align-items-center py-2">
+										<h6 class="w-60 yellow-color mb-0">FAIR WARNING</h6>
+										<p class="w-40 mb-0 text-end me-2"><i class="fa yellow-color fa-exclamation-circle"></i></p>
+									</div>
+								</div>
+								<div class="list-item">
+									<div class="d-flex align-items-center border-bottom py-2">
+										<h6 class="w-60 mb-0">FLOOR</h6>
+										<p class="w-40 mb-0 text-end me-2">&euro;12,000</p>
+									</div>
+									<div class="d-flex align-items-center py-2">
+										<h6 class="w-60 orange-color mb-0">FINAL CALL</h6>
+										<p class="w-40 orange-color mb-0 text-end me-2"><i class="fa fa-exclamation-circle"></i></p>
+									</div>
+									<div class="d-flex align-items-center py-2">
+										<h6 class="w-60 yellow-color mb-0">FAIR WARNING</h6>
+										<p class="w-40 mb-0 text-end me-2"><i class="fa yellow-color fa-exclamation-circle"></i></p>
+									</div>
+								</div>
+								<div class="list-item">
+									<div class="d-flex align-items-center border-bottom py-2">
+										<h6 class="w-60 mb-0">FLOOR</h6>
+										<p class="w-40 mb-0 text-end me-2">&euro;10,000</p>
+									</div>
+									<div class="d-flex align-items-center py-2">
+										<h6 class="w-60 orange-color mb-0">FINAL CALL</h6>
+										<p class="w-40 orange-color mb-0 text-end me-2"><i class="fa fa-exclamation-circle"></i></p>
+									</div>
+									<div class="d-flex align-items-center py-2">
+										<h6 class="w-60 yellow-color mb-0">FAIR WARNING</h6>
+										<p class="w-40 mb-0 text-end me-2"><i class="fa yellow-color fa-exclamation-circle"></i></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</content>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="foot-col foot-col1 col-lg-4 col-md-4 col-sm-12 col-12  pt-5">
+					<div class="foot-box-inner px-lg-5 px-md-3">
+						<h4 class="border-bottom">BROWSE FINE NFT ART</h4>
+						<ul class="list-unstyled ms-4 mt-3">
+							<li><a class="h5 text-dark" href="#">Live Auctions</a></li>
+							<li><a class="h5 text-dark" href="#">Featured Galleries</a></li>
+							<li><a class="h5 text-dark" href="#">Trending Artists</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="foot-col foot-col2 col-lg-4 col-md-4 col-sm-12 col-12 pt-5 pb-md-0 pb-4">
+					<div class="foot-box-inner px-lg-5 px-md-3">
+						<h4 class="border-bottom">BENEFITS</h4>
+						<ul class="list-unstyled ms-4 mt-3">
+							<li><a class="h5 text-dark" href="#">Sell Fine NFT Art</a></li>
+							<li><a class="h5 text-dark" href="#">Accepting crypto payments</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="foot-col foot-col3 col-lg-4 col-md-4 col-sm-12 col-12 pt-5 pb-md-0 pb-4 text-md-end">
+					<div class="foot-box-inner pe-md-4 ps-4 ps-md-0">
+						<div class="foot-logo position-relative">
+							<a class="d-block w-100" href="#">
+								<img class="w-100" src="images/logo-Uniquire-black-web.png"/>
+							</a>
+						</div>
+						<ul class="list-unstyled mt-3">
+							<li><a class="h6 text-dark" href="#">ABOUT US</a></li>
+							<li><a class="h6 text-dark" href="#">CONTACT</a></li>
+							<li><a class="h6 text-dark" href="#">PRIVACY POLICY</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="js/script.js"></script>
+</html>

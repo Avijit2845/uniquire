@@ -68,6 +68,12 @@ color:#4C4442 !important;
 .color-accent-5{
 color:#F3EFEC !important;
 }
+.orange-color{
+color:#F38961 !important;	
+}
+.yellow-color{
+color:#F1CC48 !important;	
+}
 .uniquire-page .border-top{
 border-top:2px solid #4C4442 !important;
 }
@@ -95,8 +101,17 @@ box-shadow:none !important;
 .container{
 max-width:1300px !important;
 }
+.w-80{
+width:80% !important;	
+}
 .w-40{
 width:40% !important;	
+}
+.w-60{
+width:60% !important;	
+}
+.w-20{
+width:20% !important;	
 }
 .w-10{
 width:10% !important;	
@@ -203,12 +218,14 @@ font-size: 15px;
 .item-desc-content .nav li a{
 color:#212529;
 }
-.item-desc-content .nav a.active{
+.item-desc-content .nav a.active,
+.auction-system-page .lots-list .nav a.active{
 position:relative;
 }
 
 .item-desc-content .nav a.active::after,
-.pills-tablist .nav a.active::after{
+.pills-tablist .nav a.active::after,
+.auction-system-page .lots-list .nav a.active::after{
 content: "";
 left: 50%;
 transform: translateX(-50%);
@@ -216,6 +233,9 @@ border-style: solid;
 position: absolute;
 border-width: 0 12px 15px 12px;		
 border-color: transparent transparent #4C4442 transparent;
+}
+.auction-system-page .lots-list .nav a.active::after{
+bottom: -20px;		
 }
 .item-desc-content .nav a.active::after{
 bottom: -19px;	
@@ -230,7 +250,7 @@ border-top-left-radius: calc(0.25rem - 1px);
 border-top-right-radius: calc(0.25rem - 1px);
 border: 2px solid #4C4442 !important;
 }
-.auction-list .list-item{
+.item-desc-content .auction-list .list-item{
 width:50%;	
 float: left;
 }
@@ -439,9 +459,17 @@ background-position:right center;
 background-size:contain;
 background-repeat:no-repeat;
 }
-.coming-page .row h2{
+.coming-page .coming-soon-text .addui-Typing span{
 font-size: 70px;
 line-height: 66px;
+color:#fff;
+}
+.coming-page .row .addui-Typing-caret{
+	display:none !important;
+}
+.coming-page .row .coming-soon-text{
+max-width:280px;	
+min-height:200px;
 }
 .coming-page .row .keep-update{
 	margin-left:80px;
@@ -467,7 +495,27 @@ position:absolute;
 left:0px;
 top:0px;
 }
-
+.auction-system-page .lots-list .tab-content,
+.system-right-part .floor-list{
+height: 45vh;
+overflow-y: scroll;
+scrollbar-width: thin;
+}
+.auction-system-area .author-info p.address{
+max-width: 190px;	
+}
+.floor-list .list-item p i{
+font-size:20px !important; 	
+}
+.auction-system-area .system-left-part-inner,
+.auction-system-area .system-right-part-inner,
+.auction-system-area .lot-info-popup{
+top:95px;	
+}
+.auction-system-area .lot-info-popup{
+display:none;
+z-index:99;
+}
 
 footer .foot-col{
 	background:#F3EFEC;
